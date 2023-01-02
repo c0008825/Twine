@@ -1,34 +1,1158 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>Claire and Alfie&#39;s Story</title>
+<title>InOrganic Choices</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}.debug-mode tw-open-button[replay]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14deg, 100%, 87%, 0) 0%, hsla(14deg, 100%, 87%, 0.25) 50%, hsla(14deg, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14deg, 100%, 87%, 0.25) 0%, hsla(14deg, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14deg, 100%, 87%, 0) 0%, hsla(14deg, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:10em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .4rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Claire and Alfie&#39;s Story.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Claire and Alfie&#39;s Story" startnode="1" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="CE2E0897-74C3-411D-9998-9612C0517B1D" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="575,225" size="100,100">Back early from a hard day&#39;s work, Claire entered her boyfriend Alfie&#39;s apartment for movie night.  A panicked fumbling is heard upstairs, Claire calls out to check everything&#39;s okay, but hears no response.
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Twelve Days Of Christmas- The Murder of the Fornmost family.</tw-noscript></noscript></tw-story>
+<tw-storydata name="Inorganic Choices" startnode="209" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="ECDB2503-39B0-4F73-9ADD-185F712B2CC1" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas');
 
-[[Call out again.]]
+track: https://c0008825.github.io/Twine/blob/main/AUDIO/robotmusic.mp3
 
-(if: $hasknife is true)[[Arm yourself]]
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');</style><script role="script" id="twine-user-script" type="text/twine-javascript">/**
+ * Harlowe Audio Library (HAL), by Chapel, v2.3.0
+ * for Harlowe 2.1.0 and higher
+ * Released under the Unlicense, and dedicated to the public domain.
+**/
+;!function(e){(jQuery.browser=jQuery.browser||{}).mobile=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(e)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(e.substr(0,4))}(navigator.userAgent||navigator.vendor||window.opera),function(){"use strict";window.Fast={filter:function(e,t){for(var o=e.length,n=[],a=0;a<o;a++)t(e[a],a,e)&&n.push(e[a]);return n},forEach:function(e,t){for(var o=e.length,n=0;n<o;n++)t(e[n],n,e)},map:function(e,t){for(var o=e.length,n=new Array(o),a=0;a<o;a++)n[a]=t(e[a],a,e);return n},find:function(e,t){for(var o=e.length,n=0;n<o;n++)if(t(e[n],n,e))return e[n]},findIndex:function(e,t){for(var o=e.length,n=0;n<o;n++)if(t(e[n],n,e))return n;return-1},some:function(e,t){for(var o=e.length,n=0;n<o;n++)if(t(e[n],n,e))return!0;return!1}}}(),window.Chapel=window.Chapel||{},window.Chapel.options={preload:!0,loadDelay:0,muteOnBlur:!0,startingVol:.5,persistPrefs:!0,globalA:!0,showControls:!0,sidebarStartClosed:!0,volumeDisplay:!1,trackLoadLimit:500,totalLoadLimit:8e3,debug:!1},window.Chapel.debug=function(){Chapel.options.debug&&console.log.apply(null,arguments)},function(){"use strict";var n=$("tw-storydata"),o=/(.+?):(.+)/,t=/[\r\n]+/,a=/^["']/,r=/["']$/;function e(e){return Fast.map(Fast.filter(e.split(t),function(e){return e&&e.trim()&&e.includes(":")}),function(e){return e.trim()})}function i(e){return e.trim().replace(a,"").replace(r,"").trim()}function s(e){var t=e.match(o);return t instanceof Array?{key:i(t[1]),value:i(t[2])}:e}var u,l,c,p=n.find('tw-passagedata[name="hal.tracks"]'),d=null,p=(p.length&&(p=e(p.text()),u=[],l=[],Fast.forEach(p,function(e){var e=s(e);"string"==typeof e&&l.push(e),u.push([e.key,(e=e.value,Fast.map(e.split(","),i))])}),l.length&&console.error("Some track definitions could not be parsed:\n"+l.join("\n")+"\nPlease check these definitions and try again."),d=new Map(u)),n.find('tw-passagedata[name="hal.config"]')),m=null;function f(e){var t=n.attr("format-version");if(e)return t;var e=t.split("."),t=e[0],o=e[1],e=e[2],t=Number(t),o=Number(o);return[t=(t=Number.isNaN(t)?3:t)<1?3:t,o=Number.isNaN(o)?3:o,e=Number.isNaN(e)?0:e]}function h(){var e=f();return!(3<=e[0]&&3<=e[1])}function g(t){return function(){var e=[].slice.call(arguments).slice(1),e=t.apply(null,e);return"string"==typeof e||"boolean"==typeof e||"number"==typeof e?e:""}}p.length&&(p=e(p.text()),c={},Fast.forEach(Fast.map(p,function(e){return s(e)}),function(e){c[e.key]=e.value}),m=c),m&&Fast.forEach(Object.keys(m),function(e){var t=e,o=c[e],e=typeof Chapel.options[e];"boolean"==e?"true"===o?Chapel.options[t]=!0:"false"===o&&(Chapel.options[t]=!1):"number"==e?(o=Number(o),Number.isNaN(o)||(Chapel.options[t]=o)):"string"==e&&o&&(Chapel.options[t]=o)});var y=require("macros");if(window.Chapel=window.Chapel||{},window.Chapel.Macros={add:function(o){o&&"object"==typeof o&&Fast.forEach(Object.keys(o),function(e){var t;t=o[e=e],h()?y.add(e,g(t),y.TypeSignature.zeroOrMore(y.TypeSignature.Any)):y.add(e,"Any",g(t),y.TypeSignature.zeroOrMore(y.TypeSignature.Any))})}},window.Chapel.Get=Object.freeze({version:f(),isHarlowe3OrLater:3<=f()[0],storyTitle:n.attr("name"),IFID:n.attr("ifid"),useOldMacroAPI:h(),fromPassage:d}),Chapel.debug("Harlowe Version -> ",Chapel.Get.version.join(".")),Chapel.debug("Harlowe Major Version -> ",Chapel.Get.version[0]),Chapel.debug("Story Title -> ",Chapel.Get.storyTitle),Chapel.debug("Story IFID -> ",Chapel.Get.IFID),Chapel.Get.version[0]<2)throw new Error("The Harlowe Audio Library is only designed to work with Harlowe 2 and 3; you appear to be using Harlowe 1 or an otherwise invalid story format.","get.js -> initialization",176);Chapel.options.storagekey="%%hal-"+Chapel.Get.IFID+"-{"+Chapel.Get.storyTitle+"}",Chapel.debug("Storage Key -> ",Chapel.options.storagekey)}(),function(){"use strict";var t=Chapel.options,e=function(e,t){if(window.localStorage)try{e=""+e,"string"!=typeof t&&(t=JSON.stringify(t)),window.localStorage.setItem(e,t)}catch(e){console.error(e)}},o=function(e){if(window.localStorage)try{return e=""+e,window.localStorage.getItem(e)}catch(e){console.error(e)}},n=function(e){if(window.localStorage)try{e=""+e,window.localStorage.removeItem(e)}catch(e){console.error(e)}},a={loaded:[],classes:{},master:{volume:t.startingVol,mute:!1},groups:{playing:[],looping:[],custom:{}},mute:function(e){a.master.mute=!!e,$(document).trigger({type:":master-mute",mute:!!e})},isMuted:function(){return!!a.master.mute},volume:function(e){e=Number(e),Number.isNaN(e)||(1<e?e=1:e<0&&(e=0),a.master.volume=e),$(document).trigger({type:":master-volume",volume:e})},getVolume:function(){return a.master.volume},stopAll:function(){a.classes.Track&&Fast.forEach(a.classes.Track.list,function(e){e.stop()})},audioPlaying:function(){return!!a.groups.playing.length},savePrefs:function(){e(t.storagekey,a.master)},loadPrefs:function(){var e=o(t.storagekey);e&&"object"==typeof e&&e.hasOwnProperty("volume")&&"number"==typeof e.volume&&e.hasOwnProperty("mute")&&"boolean"==typeof e.volume&&(delete a.master,a.master=e)},clearPrefs:function(){n(t.storagekey)}},r={track:[":available",":loaded",":play",":stop",":mute",":volume"],master:[":master-mute",":master-volume"]};var i=r.track.concat(r.master);function s(e,t){if(!e||"string"!=typeof e||!e.trim())return null;e=Fast.filter(Fast.map(e.split(" "),function(e){return(e=":"!==(e=e.split(".")[0])[0]?":"+e:e)+".userland"}),function(e){return(t?i:r.track).includes(e)}).join(" ");return e&&e.trim()?e:null}a.data={parseEvent:s,bail:function(e){throw new Error(e,"audio.js -> bail()",140)}},a.on=function(e,t){t&&"function"==typeof t?(e=s(e,!0))&&$(document).on(e,t):console.error("Chapel.Audio.on() -> invalid callback")},a.one=function(e,t){t&&"function"==typeof t?(e=s(e,!0))&&$(document).one(e,t):console.error("Chapel.Audio.one() -> invalid callback")},a.off=function(e){(e=s(e,!0))&&$(document).off(e)},t.persistPrefs&&($(document).on(":master-mute",a.savePrefs),$(document).on(":master-volume",a.savePrefs)),$(document).on(":play",function(e){e.track.addToGroup("playing")}),$(document).on(":stop",function(e){e.track.removeFromGroup("playing")}),t.muteOnBlur&&$(window).on("blur",function(){a.isMuted()||(a.mute(!0),$(window).one("focus",function(){a.mute(!1)}))}),a.parseEvent=s,window.Chapel=window.Chapel||{},window.Chapel.Audio=a}(),function(){"use strict";var a=Chapel.Audio,o=a.data.pareEvent,r=a.data.bail,i=Chapel.options,t=$(document.createElement("div")).attr("id","audio-container").css("display","none").appendTo(document.body),s={aac:"audio/aac",caf:"audio/x-caf","x-caf":"audio/x-caf",mp3:'audio/mpeg; codecs="mp3"',mpeg:'audio/mpeg; codecs="mp3"',m4a:"audio/mp4",mp4:"audio/mp4","x-m4a":"audio/mp4","x-mp4":"audio/mp4",oga:"audio/ogg",ogg:"audio/ogg",opus:'audio/ogg; codecs="opus"',wav:"audio/wav",wave:"audio/wav",weba:"audio/webm",webm:"audio/webm"};function u(e,t,o){this instanceof u||r("Track: called without `new` operator"),e||r("Track: no id specified"),"string"!=typeof e&&r("Track: track id is not a string"),t&&(!Array.isArray(t)||t.length)||r("Track: no sources specified"),o?t=[].slice.call(arguments).slice(1):"string"==typeof t&&(t=[t]);var n=$(document.createElement("audio"));Fast.forEach(t,function(e){$(document.createElement("source")).attr({src:e,type:(e=(e=(e=(e=(e=e).split("."))[e.length-1]).includes("?")?e.split("?")[0]:e).toLowerCase().trim(),Object.keys(s).includes(e)||r('Track: unsupported file type "'+e+'"'),s[e])}).appendTo(n)}),n.attr({"data-track":"id","data-volume":1,"data-mute":!1}).one("canplaythrough.hal",function(){a.loaded.push(e)}),i.preload&&n.attr("preload","auto"),n[0].volume=+a.master.volume,this.id=e,this.$el=n,this.unwrap=n[0],this.sources=t}Object.assign(u,{list:[],is:function(e){return e instanceof u},has:function(t){return Fast.some(u.list,function(e){return e.id===t})},emit:function(e,t){$(document).trigger({type:e,track:t}),t.emit(e)},add:function(e,t,o){var n=new u(e,t=o?[].slice.call(arguments).slice(1):t);return u.list.push(n),n.$el.on("canplay",function(){u.emit(":available",n)}),n.$el.on("canplaythrough",function(){u.emit(":loaded",n)}),n.attach(),n},renew:function(){Fast.forEach(u.list,function(e){e.mute(e.isMuted()),e.volume(e.getVolume())})},getIdx:function(t){return Fast.findIndex(u.list,function(e){return e.id===t})},get:function(t){var e=Fast.find(u.list,function(e){return e.id===t});if(e)return e;throw new ReferenceError('There is no track with the id "'+t+'". Please check your spelling and capitalization.',"track.js -> Track.get()",155)},removeFromDOM:function(e){(e="string"==typeof e?u.get(e):e)&&u.is(e)?e.unattach():t.remove()},_runOnMultiple:function(e,t,o){e instanceof Array&&u.prototype.hasOwnProperty(t)&&Fast.forEach(e,function(e){(e=u.is(e)?e:u.get(e)||null)&&e[t].apply(e,o&&o instanceof Array?o:[])})}}),Object.assign(u.prototype,{constructor:u,emit:function(e){this.$el.trigger({type:e,track:this})},clone:function(){return new u(this.id,this.sources)},isAttached:function(){return $.contains(t[0],this.unwrap)},attach:function(){return this.isAttached()||this.$el.appendTo(t),this},unattach:function(){return this.isAttached()&&this.$el.remove(),this},isPlaying:function(){return!this.unwrap.paused},play:function(){var e=this;return this.unwrap.play(),u.emit(":play",this),this.$el.on("ended",function(){e.unwrap.loop||(e.unwrap.currentTime=0,u.emit(":stop",e))}),this},playWhenPossible:function(){var t=this;return this.unwrap.play().then(function(){u.emit(":play",t),t.$el.on("ended",function(){t.unwrap.loop||(t.unwrap.currentTime=0,u.emit(":stop",t))})},function(e){$(document).one("click mousedown keydown touchstart",function(){t.play()})}).catch(function(e){console.error(e)}),this},forcePlay:function(){var e=this,t=$(document.createElement("a")).css("display","none").appendTo(document.body).on("click",function(){e.play()});setTimeout(function(){t.trigger("click")},safeAudioStart)},pause:function(){return this.unwrap.pause(),u.emit(":pause",this),this},stop:function(){return this.unwrap.pause(),this.unwrap.currentTime=0,u.emit(":stop",this),this},mute:function(e){return this.$el.attr("data-mute",e=!!e),a.master.mute?this.unwrap.muted=!0:this.unwrap.muted=e,u.emit(":mute",this),this},isMuted:function(){var e=this.$el.attr("data-mute");return"boolean"==typeof e?e:"false"!==e},toggleMute:function(){return this.mute(!this.isMuted()),this},volume:function(e){return e=Number(e),Number.isNaN(e)||(1<e?e=1:e<0&&(e=0),this.$el.attr("data-volume",e),this.unwrap.volume=e*a.master.volume),u.emit(":volume",this),this},getVolume:function(){return Number(this.$el.attr("data-volume"))},addToGroup:function(e,t){var o=this,t=(t?a.groups.custom:a.groups)[e];return Fast.some(t,function(e){return o.id===e.id})||t.push(this),this},removeFromGroup:function(e,t){var o=this,t=(t?a.groups.custom:a.groups)[e],e=Fast.findIndex(t,function(e){return e.id&&e.id===o.id});return t.splice(e,1),this},loop:function(e){return this.unwrap.loop=!!e,this.unwrap.loop?this.addToGroup("looping"):this.removeFromGroup("looping"),this},isLooping:function(){return!!this.unwrap.loop},toggleLoop:function(){return this.loop(!this.isLooping()),this},seek:function(e){return e<0?e=this.unwrap.duration-e:e>this.unwrap.duration&&(e=this.unwrap.duration),this.unwrap.currentTime=e,this},fadeIn:function(e){var t=this,o=(e=e||1,this.getVolume());return this.volume(0),this.play(),this.$el.animate({volume:o*a.master.volume},1e3*e,function(){t.volume(o),u.emit(":volume",t),u.emit(":fade",t)}),this},fadeOut:function(e){e=e||1;var t=this,o=this.getVolume();return this.$el.animate({volume:0},1e3*e,function(){t.stop(),t.volume(o),u.emit(":volume",t),u.emit(":fade",t)}),this},fadeTo:function(e,t){var o=this;if(e=e||1,t=Number(t),!Number.isNaN(t))return 1<t?t=1:t<0&&(t=0),this.$el.animate({volume:t*a.master.volume},1e3*e,function(){o.volume(t),u.emit(":volume",o),u.emit(":fade",o)}),this;alert("ivalid volume level")},delay:function(e,t){var o=this;"function"==typeof t&&(e=Number(e),(Number.isNaN(e)||e<0)&&(e=0),setTimeout(function(){t.call(o,o,e)},e))},on:function(e,t){if(!t||"function"!=typeof t)return console.error("<track>.on() -> invalid callback"),this;(e=o(e))&&this.$el.on(e,t)},one:function(e,t){if(!t||"function"!=typeof t)return console.error("<track>.one() -> invalid callback"),this;(e=o(e))&&this.$el.one(e,t)},off:function(e){(e=o(e))&&this.$el.off(e)}}),a.classes.Track=u,a.newTrack=function(){try{return u.add.apply(null,arguments)}catch(e){console.error(e.message),alert("Error in A.newTrack() -> see the console for more information.")}},a.track=function(e){try{return u.get(e)}catch(e){console.error(e.message),alert("Error in A.track() -> see the console for more information.")}},$(document).on(":master-mute",u.renew),$(document).on(":master-volume",u.renew)}(),function(){"use strict";var n=Chapel.Audio,a=n.classes.Track,o=(n.data._extend,/(play)?list:(.+)/i);n.createGroup=function(e,t,o){o=o?[].slice.call(arguments).slice(1):t;t=e,(e=o)&&Array.isArray(e)||(e=[]),n.groups.custom[t]=Fast.map(e,function(e){return a.get(e)})},n.group=function(e){if(!(this instanceof n.group))return new n.group(e);if(Object.keys(n.groups.custom).includes(e))this.members=n.groups.custom[e];else{if(!(n.groups[e]&&n.groups[e]instanceof Array))throw new ReferenceError('There is no group with the id "'+id+'". Please check your spelling and capitalization.',"group.js -> A.group()",29);this.members=n.groups[e]}var t;o.test(e)&&(t=e.match(o)[2])&&t.trim()&&(this.members=n.playlist(t).tracks),Array.isArray(this.members)||(this.members=[],console.error('Could not find members for track group "'+e+'"!'))},Object.assign(n.group,{is:function(e){return this instanceof n.group},_runOnAll:function(e,t,o,n){null!=n?o=[].slice.call(arguments).slice(2):o instanceof Array||(o=[o]);n=[e.members,t,o];a._runOnMultiple.apply(null,n)}}),Object.assign(n.group.prototype,{constructor:n.group,_run:function(){n.group._runOnAll.apply(null,[this].concat([].slice.call(arguments)))},play:function(){return this._run("play"),this},pause:function(){return this._run("pause"),this},stop:function(){return this._run("stop"),this},mute:function(e){return this._run("mute",e),this},volume:function(e){return this._run("volume",e),this},loop:function(e){return this._run("loop",e),this}})}(),function(){"use strict";var e=Chapel.Audio,a=e.classes.Track;e.data._extend;function n(e,t){if(!(this instanceof n))return new n(e,t);this.id=e,this.tracks=t.map(function(e){return a.get(e)}),this.looping=!1,this.current="",this.playing=!1}Object.assign(n,{list:{},is:function(e){return e instanceof n},add:function(e,t,o){return o&&(t=[].slice.call(arguments).slice(1)),n.list[e]=new n(e,t),n.list[e]},_runOnAll:function(e,t,o,n){null!=n?o=[].slice.call(arguments).slice(2):o instanceof Array||(o=[o]);n=[e.tracks,t,o];a._runOnMultiple.apply(null,n)}}),Object.assign(n.prototype,{constructor:n,clone:function(){return new n(this.id,this.tracks.map(function(e){return e.id}))},_run:function(){n._runOnAll.apply(null,[this].concat([].slice.call(arguments)))},volume:function(e){return this._run("volume",e),this},mute:function(e){return this._run("mute",e),this},shuffle:function(){for(var e,t,o=this.tracks,n=o.length-1;0<n;n--)e=Math.floor(Math.random()*(n+1)),t=o[n],o[n]=o[e],o[e]=t;return this.tracks=o,this},random:function(){return this.tracks[Math.floor(Math.random()*this.tracks.length)]},isPlaying:function(){return this.playing},nowPlaying:function(){return a.get(this.current)},play:function(e){var t=this;if((e=e||(t.current?Fast.findIndex(t.tracks,function(e){return e.id===t.current}):0))>=t.tracks.length&&t.looping)e=0;else if(e>=t.tracks.length)return t.current="",void(t.playing=!1);var o=t.tracks[e],n=o.isLooping();return o.loop(!1),o.play(),t.playing=!0,setTimeout(function(){o.isPlaying()||(t.playing=!1)},20),t.current=o.id,o.$el.one("ended.playlist",function(){e++,o.loop(n),t.play(e)}),t},loop:function(e){return this.looping=!!e,this},isLooping:function(){return this.looping},stop:function(){var e;return this.current&&this.isPlaying()?(e=this.nowPlaying())&&(e.stop(),e.$el.off(".playlist")):this._run("stop"),this.current="",this.playing=!1,this},pause:function(){var e;return this.current&&this.isPlaying()&&((e=this.nowPlaying())&&e.pause()),this.playing=!1,this}}),e.classes.Playlist=n,e.createPlaylist=function(){try{n.add.apply(null,arguments)}catch(e){console.error(e.message),alert("Error in A.createPlaylist() -> see the console for more information.")}},e.playlist=function(e){try{var t=n.list[e]||null;if(t)return t;throw new ReferenceError('There is no playlist with the id "'+e+'". Please check your spelling and capitalization.',"list.js -> A.playlist()",171)}catch(e){console.error(e.message),alert("Error in A.createPlaylist() -> see the console for more information.")}}}(),function(){"use strict";var t=Chapel.Audio,o=t.classes.Track,n=t.classes.Playlist;function a(t,o){if("object"!=typeof o)throw new TypeError("Invalid extension.","extensions.js -> _extend()",8);Fast.forEach(Object.keys(o),function(e){if(void 0!==t[e])throw new Error('Invalid extension: cannot clobber existing property "'+e+'".',"extensions.js -> _extend()",8);t[e]=o[e]})}t.extend=function(e){a(Audio,e)},o.extend=function(e){a(o,e)},o.extendPrototype=function(e){a(o.prototype,e)},t.extendTrack=o.extend,t.extendTrackProto=o.extendPrototype,t.group.extend=function(e){a(t.group,e)},t.group.extendPrototype=function(e){a(t.group.prototype,e)},t.extendGroup=t.group.extend,t.extendGroupProto=t.group.extendPrototype,n.extend=function(e){a(n,e)},n.extendPrototype=function(e){a(n.prototype,e)},t.extendPlaylist=n.extend,t.extendPlaylistProto=n.extendPrototype}(),function(){"use strict";var e,t,o,n,a,r,i,s=Chapel.options;s.showControls&&(e=$(document.createElement("div")).attr("id","story-menu").css("display","none"),t=$(document.createElement("span")).attr("id","vol-title").append("Volume"),s.volumeDisplay||t.css("display","none"),o=$(document.createElement("input")).attr({id:"audio-volume",type:"range",min:1,max:99,step:1,title:"Volume"}).addClass("hal"),(a=Math.trunc(100*window.Chapel.Audio.master.volume))<0?a=0:100<a&&(a=100),o.attr("value",a),n=function(e){void 0===e&&(e=o.val()),t.empty().append("Volume "+e)},o.on("input",function(){window.Chapel.Audio.volume($(this).val()/100),n($(this).val())}),a=$(document.createElement("tw-link")).attr({id:"audio-mute",title:"Mute"}).append("Mute <span></span>").on("click",function(e){e.preventDefault(),$(this).toggleClass("muted"),Chapel.Audio.mute(!Chapel.Audio.isMuted())}),Chapel.Audio.isMuted()&&a.addClass("muted"),r=$(document.createElement("tw-link")).attr("id","audio-panel-toggle").on("click",function(e){e.preventDefault(),i.toggleClass("closed")}),i=$(document.createElement("div")).attr("id","audio-controls").append(e,t,o,a,r).appendTo(document.body),s.sidebarStartClosed&&i.addClass("closed"),window.Chapel=window.Chapel||{},window.Chapel.Audio=window.Chapel.Audio||{},window.Chapel.Audio.controls={$panel:i,$volume:o,$mute:a,$user:e,close:function(){i.addClass("closed")},open:function(){i.removeClass("closed")},toggle:function(){i.toggleClass("closed")},hide:function(){i.css("display","none")},show:function(){i.css("display","block")},updateVolume:n})}(),function(){"use strict";var s=Chapel.options,t=State,e=$(document.createElement("div")).attr("id","audio-overlay").css("display","none").appendTo(document.body);function o(){e.css("display","block").append('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>')}function u(){e.fadeOut(function(){e.empty()})}window.Chapel=window.Chapel||{},window.Chapel.Audio=window.Chapel.Audio||{},window.Chapel.Audio.loadScreen={show:o,dismiss:u,kill:function(){$("#audio-overlay").remove()}},window.Chapel.Audio.$overlay=e,window.Chapel.Audio.preload=function(){var a,e,r,i;Chapel.debug("This is a mobile browser -> ",$.browser.mobile),t.pastLength||t.futureLength||$.browser.mobile||($(document).ready(function(){o()}),a=100+s.loadDelay,e=Chapel.Audio.classes.Track.list,r=Chapel.Audio.loaded,e.length?(i=Fast.map(e,function(e){return e.id}),0<s.totalLoadLimit&&setTimeout(function(){u()},s.totalLoadLimit),function e(){var t,o,n;i.length?(t=i.shift(),r.includes(t)?e():(o=Chapel.Audio.classes.Track.get(t)).unwrap.readyState<2?(n=!1,o.$el.one("canplaythrough.hal",function(){e(),n=!0}),setTimeout(function(){n||(o.$el.off("canplaythrough.hal"),e())},s.trackLoadLimit)):(r.includes(t)||r.push(t),e())):setTimeout(u,a)}()):setTimeout(u,a))}}(),function(){"use strict";var e,t,o=Chapel.options.storagekey+"_hal_restart_",n=(Chapel.debug("HAL Session Key -> ",o),window.sessionStorage?(Chapel.debug("Session Storage Available"),e=function(e,t){window.sessionStorage.setItem(o+e,t)},t=function(e){return window.sessionStorage.getItem(o+e)}):(Chapel.debug("Session Storage Unavailable"),e=function(){},t=function(){},console.warn("Session storage is unavailable...")),{save:e,load:t});window.Chapel.Audio.state={_store:n,saveTracks:function(){var e;try{e=Fast.map(Chapel.Audio.classes.Track.list,function(e){return{id:e.id,sources:e.sources}}),Chapel.debug("Session Saved (Tracks) -> ",e),e=JSON.stringify(e),n.save("tracks",e)}catch(e){console.error(e.message)}},loadTracks:function(){var e;try{e=(e=n.load("tracks"))&&JSON.parse(e),Array.isArray(e)&&e.length&&(Chapel.debug("Session Loaded (Tracks) -> ",e),Fast.forEach(e,function(e){e.id&&e.sources&&!Chapel.Audio.classes.Track.has(e.id)?Chapel.Audio.newTrack.apply(null,[e.id].concat(e.sources)):Chapel.debug("Track reloading skipped.")}))}catch(e){console.error(e.message)}},savePlaylists:function(){try{var o=Chapel.Audio.classes.Playlist.list,e=Fast.map(Object.keys(o),function(e){var t={};return t.tracks=Fast.map(o[e].tracks,function(e){return e.id}),t.id=o[e].id,t});Chapel.debug("Session Saved (Playlists) -> ",e),e=JSON.stringify(e),n.save("playlists",e)}catch(e){console.error(e.message)}},loadPlaylists:function(){var e;try{(e=(e=n.load("playlists"))&&JSON.parse(e))&&Array.isArray(e)&&e.length&&(Chapel.debug("Session Loaded (Playlists) -> ",e),Fast.forEach(e,function(e){e.id&&e.tracks&&Chapel.Audio.createPlaylist(e.id,e.tracks)}))}catch(e){console.error(e.message)}},saveGroups:function(){var t;try{t={},Fast.forEach(Object.keys(Chapel.Audio.groups.custom),function(e){t[e]=Fast.map(Chapel.Audio.groups.custom[e],function(e){return"string"==typeof e?e:e.id})}),Chapel.debug("Session Saved (Groups) -> ",t),t=JSON.stringify(t),n.save("groups",t)}catch(e){console.error(e.message)}},loadGroups:function(){var t;try{(t=(t=n.load("groups"))&&JSON.parse(t))&&"object"==typeof t&&(Chapel.debug("Session Loaded (Groups) -> ",t),Fast.forEach(Object.keys(t),function(e){Fast.map(t[e],function(e){return Chapel.Audio.classes.Track.get(e)})}),Chapel.Audio.groups.custom=t)}catch(e){console.error(e.message)}}}}(),function(){"use strict";var e=Chapel.options;e.globalA&&void 0===window.A&&(Chapel.debug("Created global A interface."),window.A=window.Chapel.Audio),Chapel.Get.fromPassage&&(Chapel.debug("Loading tracks from track def special passage -> ",Chapel.Get.fromPassage),Chapel.Get.fromPassage.forEach(function(e,t){Chapel.Audio.newTrack.apply(null,[t].concat(e))})),$(document).on("unload",function(){Chapel.debug("User Prefs Saved"),window.Chapel.Audio.savePrefs()}),Chapel.Audio.classes.Track.renew(),Chapel.Audio.controls&&Chapel.Audio.controls.updateVolume(),Chapel.Get.isHarlowe3OrLater&&($(window).on("unload",function(){Chapel.debug("HAL State Saved"),Chapel.Audio.state.saveTracks(),Chapel.Audio.state.savePlaylists(),Chapel.Audio.state.saveGroups()}),Chapel.debug("HAL State Loaded"),Chapel.Audio.state.loadTracks(),Chapel.Audio.state.loadPlaylists(),Chapel.Audio.state.loadGroups()),e.persistPrefs&&(Chapel.debug("User Prefs Loaded"),Chapel.Audio.loadPrefs())}(),function(){"use strict";var i,s,e,u,t;Chapel.options.showControls&&(i=Engine,s=Chapel.Audio.controls.$user,e=function(){return"none"!==s.css("display")},u=function(){return e()||s.css("display","block"),s},t=function(){return e()&&s.css("display","none"),s},Chapel.Audio.menu={hide:t,show:u,isShown:e,links:{add:function(e,t,o){var n,a;if(!e||"string"!=typeof e)return r="undefined",alert(r),void console.error(r);o||"function"!=typeof t?(t&&"string"==typeof t&&(n=t),o&&"function"==typeof o&&(a=o)):(a=t,n=null);var r=$(document.createElement("tw-link")).append(e).attr({tabindex:"0",name:e.toLowerCase().trim()}).on("click",function(){n&&i.goToPassage(n),a&&a()}).addClass("story-menu").appendTo(s);return u(),r},clear:function(){return s.empty(),t()},hide:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').addClass("hide")},show:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').removeClass("hide")},toggle:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').toggleClass("hide")},remove:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').remove()}}})}(),function(){"use strict";var n=Chapel.Audio;function o(e){return e&&"function"==typeof e}function a(e,t){if(!e||"string"!=typeof e)return null;switch(e=e.toLowerCase().trim()){case"isplaying":e="isPlaying";break;case"playwhenpossible":e="playWhenPossible";break;case"ismuted":e="isAMuted";break;case"togglemute":e="toggleMute";break;case"getvolume":e="getVolume";break;case"islooping":e="isLooping";break;case"toggleloop":e="toggleLoop";break;case"fadein":e="fadeIn";break;case"fadeout":e="fadeOut";break;case"fadeto":e="fadeTo";break;case"stopall":e="stopAll"}if("isPlaying"===e&&"master"===t&&(e="audioPlaying"),"group"===t){if(o(n.group.prototype[e]))return e}else if("master"===t){if(o(n[e]))return e}else if(o(n.classes[t].prototype[e]))return e;throw new ReferenceError('Cannot run the command: "'+e+'" on the API "'+t+'". The command may be invalid, or this may be a bug in HAL.',"macros.js -> getCommand()",10)}window.Chapel.Macros.add({newtrack:function(){var e=[].slice.call(arguments);try{return n.newTrack.apply(null,e)}catch(e){alert("Error in the (newtrack:) macro: "+e.message)}},newplaylist:function(e,t){t=[].slice.call(arguments).slice(1);try{return n.createPlaylist(e,t)}catch(e){alert("Error in the (newplaylist:) macro: "+e.message)}},newgroup:function(e,t){t=[].slice.call(arguments).slice(1);try{return n.createGroup(e,t)}catch(e){alert("Error in the (newgroup:) macro: "+e.message)}},masteraudio:function(e){try{return e=a(e,"master"),n[e].apply(null,[].slice.call(arguments).slice(1))}catch(e){alert("Error in the (masteraudio:) macro: "+e.message)}},track:function(e,t){try{var o=n.track(e);return o[t=a(t,"Track")].apply(o,[].slice.call(arguments).slice(2))}catch(e){alert("Error in the (track:) macro: "+e.message)}},playlist:function(e,t){try{var o=n.playlist(e);return o[t=a(t,"Playlist")].apply(o,[].slice.call(arguments).slice(2))}catch(e){alert("Error in the (playlist:) macro: "+e.message)}},group:function(e,t){try{var o=n.group(e);return o[t=a(t,"group")].apply(o,[].slice.call(arguments).slice(2))}catch(e){alert("Error in the (group:) macro: "+e.message)}}})}();
+/** End of HAL code */
 
-[[Sit on the sofa]]</tw-passagedata><tw-passagedata pid="2" name="Call out again." tags="" position="350,350" size="100,100">Claire calls out again, the sound is muffled through the closed doors, but Claire hears what sounds like &quot;shushng&quot; coming from the bedroom.
+ </script><tw-tag name="startup" color="none"></tw-tag><tw-tag name="hal.tracks" color="orange"></tw-tag><tw-passagedata pid="1" name="The Beginning" tags="" position="500,175" size="100,100">
 
-[[Call out once more.]]</tw-passagedata><tw-passagedata pid="3" name="Arm yourself" tags="" position="550,400" size="100,100">Claire picks up a knife from the kitchen and tentatively heads up the stairs. Claire is horrified to discover her best friend Hannah naked and unconscious, it appears she tripped rushing to conceal herself in the wardrobe. Alfie is attempting to move her further into the wardrobe.
+Travelling back for Christmas was always exciting. Chestnuts roasting on (text-colour:red)[Grandma&#39;s] fire.(text-colour:red)[Mum] and grandma argue whilst (text-colour:red)[Auntie Donna] brings (text-colour:red)[Gisella] in her wheelchair to laugh at them. (text-colour:red)[Dad] is constantly trying to be intrigued by the new flower plan that (text-colour:red)[Uncle Lewis] is  passionate about. (text-colour:red)[Uncle Shaun] tried to persuade (text-colour:red)[Grandad] to stop going to the shooting range as it was making him lose his hearing. Ironically, he never listened.(text-colour:red)[Charlie, Billy] and (text-colour:red)[ Milly] always fight over presents. They were the good old days
 
-[[Stab]]
-[[Don&#39;t Stab]]</tw-passagedata><tw-passagedata pid="4" name="Sit on the sofa" tags="" position="800,350" size="100,100">Undetered by the strange sound, Claire decides to make herself a brew and put her feet up.
+[[...]]
+(track: &#39;background&#39;, &#39;loop&#39;, &#39;true&#39;)
+(track: &#39;background&#39;, &#39;playwhenpossible&#39;)
 
-[[Switch on television]]</tw-passagedata><tw-passagedata pid="5" name="Call out once more." tags="" position="350,475" size="100,100">There is a loud crash in the upstairs bedroom followed by a dead silence. Claire is afraid, she feels she should arm herself.
+</tw-passagedata><tw-passagedata pid="2" name="..." tags="" position="500,300" size="100,100">That was until the newspaper was published yesterday,and I found it at the station. My family were dead, murdered even, the servants blabbed to the reporters. Anything for a bit of fame... I&#39;ve decided to investigate the situation for myself. Maybe they left something behind in the house that the murderer wouldn&#39;t considered. We were always a paranoid family. Maybe (text-colour:red)[Mother] left something; she was the most paranoid.
 
-(set: $hasknife to true)
+[[Go to Mother&#39;s Room]]</tw-passagedata><tw-passagedata pid="3" name="Go to Mother&#39;s Room" tags="" position="500,425" size="100,100">This was mother&#39;s room. She always kept her room tidy and very organised. She always tried to leave her room, so it&#39;s mainly filled with clothes, her desk,bed and a photo of our small family of four within the big household of twelve. Maybe she kept something important somewhere... I can feel it in my gut...
 
-[[Start&lt;-Return to start]] </tw-passagedata><tw-passagedata pid="6" name="Switch on television" tags="" position="800,475" size="100,100">Claire tunes into the Eurovision song contest. Claire has excellent taste.
+[[Behind photo]]
 
-But she can&#39;t help but feel something is amiss.[[Start&lt;-Return to start]] </tw-passagedata><tw-passagedata pid="7" name="knife having" tags="startup" position="375,650" size="100,100">(set: $hasknife to false)</tw-passagedata><tw-passagedata pid="8" name="Stab" tags="" position="675,525" size="100,100">(text-rotate-x:42)+(text-rotate-y:16)[(text-colour:red)[Alfie is dead. :)]]</tw-passagedata><tw-passagedata pid="9" name="Don&#39;t Stab" tags="" position="475,525" size="100,100">(text-colour:navy)[(text-rotate-y:18)+(text-rotate-z:18)[Alfie is alive. :(]]</tw-passagedata></tw-storydata>
+[[Under the bed]]
+
+[[Desk]]
+</tw-passagedata><tw-passagedata pid="4" name="Behind photo" tags="" position="500,550" size="100,100">It was just the four of us... Mum, Dad, Milly and I.
+
+We rarely argued, and even when we did, it was because we needed to be alone... in this big house, we were never alone... someone was always watching.
+
+I turn the photo over,seeing if anything could have been hiding here...
+
+Nothing. 
+
+Maybe it&#39;s somewhere else.
+
+[[Go to Mother&#39;s Room]]
+
+</tw-passagedata><tw-passagedata pid="5" name="Under the bed" tags="" position="625,550" size="100,100">I get on the floor, lying completely flat... just an old pair of dirty socks, and mum forgot to put this in the laundry basket.
+
+[[Go to Mother&#39;s Room]] </tw-passagedata><tw-passagedata pid="6" name="Desk" tags="" position="375,550" size="100,100">Mum always kept her make-up in her drawers and a large elegant mirror laid upon the top of the dark oak desk.
+
+[[Try the Drawers]]
+</tw-passagedata><tw-passagedata pid="7" name="Try the Drawers" tags="" position="375,675" size="100,100">It is locked.
+
+[[Answer the Puzzle]]
+</tw-passagedata><tw-passagedata pid="8" name="Answer the Puzzle" tags="" position="375,800" size="100,100">&#39;&#39;Question&#39;&#39;
+
+In what two decades did the minimalist aesthetic flourish?
+
+[[1990s and 2000s]]
+
+[[1960s and 1970s]]
+
+[[2010s and 2020s]]</tw-passagedata><tw-passagedata pid="9" name="1960s and 1970s" tags="" position="500,925" size="100,100">Correct answer.
+
+&#39;According to Tate Modern the Minimalist aesthetic flourished in the 1960s and 1970s with Carl Andre, Dan Flavin, Donald Judd, Sol Lewitt, Agnes Martin and Robert Morris becoming the movements most important innovators.&#39;
+
+The drawer becomes unlocked
+[[Open the drawer]]
+
+</tw-passagedata><tw-passagedata pid="10" name="2010s and 2020s" tags="" position="250,925" size="100,100">Wrong answer.
+
+Try again
+
+[[Answer the Puzzle]]</tw-passagedata><tw-passagedata pid="11" name="1990s and 2000s" tags="" position="375,925" size="100,100">Wrong answer.
+
+Try again 
+
+[[Answer the Puzzle]]
+</tw-passagedata><tw-passagedata pid="12" name="Open the drawer" tags="" position="500,1050" size="100,100">Inside the drawer, there&#39;s a bunch of lipsticks, eyeshadows and mascara. Underneath there is a letter...
+
+It has my name on it.
+
+[[Open the mums letter]]
+</tw-passagedata><tw-passagedata pid="13" name="Open the mums letter" tags="" position="500,1175" size="100,100">(bg:#d6a676)+(text-colour:black)
+[12/12/2012
+                                                                                                        												Dear Jack,
+                                                                                                                                              By the time you have found this letter, I am already dead. Hopefully, I am the only one, but paranoia has set in. There is a traitor within our midst, Auntie Gisella was the first hit, but she&#39;s in the family doctor&#39;s care. Maybe she is still alive. Check her room later... she might have a letter...Im sure we are all writing our death letters.
+                                                                                                                                                        
+                                                                                                                                              I have kept monitoring my food, checking corners as I feel like someone is always watching... (text-colour:red)[ Jason] cooked again today but the food tasted a bit off today. I sent (text-colour:red)[Leon] to ask him about it, but he has yet to return.I need some sleep.
+                                                                                                                                                     	I love you, my son.
+                                                                                                                                                        Save us all.
+                                                                                                                                                        Love Mum.]
+                                                                                                                                                       
+                                                                                                                                                        
+                                                                                                                                                        [[Close the letter]]</tw-passagedata><tw-passagedata pid="14" name="Close the letter" tags="" position="500,1300" size="100,100">I fold the letter up and put it into my pocket.
+
+The letter has been added to the (text-colour:blue)[inventory].
+
+She always was a food lover, just allergic to some seafood, but Jason, the chef, is aware of this...
+
+I will talk to him.
+
+[[Interrogate Jason]]
+</tw-passagedata><tw-passagedata pid="15" name="Interrogate Jason" tags="" position="500,1425" size="100,100">Jason is a tall fellow with a bit of fat to him. He always was fun and allowed us in the kitchen as children, that was until Leon told him off, worried that we would hurt ourselves.
+
+Jason is in the kitchen.
+
+[[Hi]]
+
+[[Are you ok?]]
+
+[[What happened to mum?]]
+
+[[So, Melissa took the food?]]
+
+[[Did you watch Leon taste the food?]]
+
+[[Who was the next victim?]]
+
+[[ Are you the killer?]]
+</tw-passagedata><tw-passagedata pid="16" name="Hi" tags="" position="500,1550" size="100,100">Hi Jack! Welcome Home 
+
+[[Interrogate Jason]] </tw-passagedata><tw-passagedata pid="17" name="Are you ok?" tags="" position="625,1550" size="100,100">I&#39;m doing alright. Everything just happened so quickly...in a way... it was hard to process at the time, and it still is. But you&#39;re home; you can help us solve this.
+
+[[Interrogate Jason]] </tw-passagedata><tw-passagedata pid="18" name="What happened to mum?" tags="" position="375,1550" size="100,100">Well, I made the evening meal,stew with dumplings requested by your father and asked Leon to taste it before we sent it to your mother. Stew was never my forte. Next thing, Leon plated it up and asked Melissa to take it up to your mother, and she wanted to eat in her room that night.
+
+[[Interrogate Jason]] </tw-passagedata><tw-passagedata pid="19" name="So, Melissa took the food?" tags="" position="500,1675" size="100,100">I assume so. She left the kitchen with the food,and i thought that she was the one to drop it off.
+
+[[Interrogate Jason]] </tw-passagedata><tw-passagedata pid="20" name="Did you watch Leon taste the food?" tags="" position="625,1675" size="100,100">I did; indeed, I wanted to improve my stew-making skills. Apparently, I was missing was some salt and a dash of soya sauce, so I added them to the liking.
+
+[[Interrogate Jason]] </tw-passagedata><tw-passagedata pid="21" name="Who was the next victim?" tags="" position="375,1675" size="100,100">Unfortunately, the next death was your father.
+
+[[Interrogate Jason]] 
+
+[[ Go to Dads&#39; room]]
+</tw-passagedata><tw-passagedata pid="22" name=" Are you the killer?" tags="" position="500,1800" size="100,100">No.
+
+[[Interrogate Jason]]</tw-passagedata><tw-passagedata pid="23" name=" Go to Dads&#39; room" tags="" position="375,1800" size="100,100">I remember when Milly and I used to sneak in here when hiding from mum, we always used to hide in the wardrobe. He would always lie about where we were hiding.
+
+If the wardrobe never worked, under the bed was next.
+
+[[ Look under the bed]]
+
+[[Look on the desk]]
+
+[[Look in the Wardrobe]]</tw-passagedata><tw-passagedata pid="24" name="Look on the desk" tags="" position="250,1925" size="100,100">The desk was locked, and I never knew how to get into it,and  I assumed there was always a hidden key in the room.
+
+[[ Go to Dads&#39; room]]
+</tw-passagedata><tw-passagedata pid="25" name="Look in the Wardrobe" tags="" position="500,1925" size="100,100">This was where Milly and I hid as children. It was always so big to us, but now I&#39;m here, I never realised how small I was...
+
+There&#39;s a glint in the corner of the wardrobe.
+
+[[Inspect the glint]]
+</tw-passagedata><tw-passagedata pid="26" name=" Look under the bed" tags="" position="375,1925" size="100,100">The bed was rarely ever used. He always slept in mum&#39;s room and was here mainly to work at the desk or if he and mum fought and hadn&#39;t reconciled that day.
+
+[[ Go to Dads&#39; room]] 
+</tw-passagedata><tw-passagedata pid="27" name="Inspect the glint" tags="" position="500,2050" size="100,100">It is  a key. It&#39;s small enough to fit the lock of the desk...I should try it.
+
+[[Try the key in the drawer lock]]
+</tw-passagedata><tw-passagedata pid="28" name="Try the key in the drawer lock" tags="" position="500,2175" size="100,100">The key goes in the lock. I turned it to the left... the lock clicked, and the drawer opened... There is a letter inside.
+
+[[Open dads&#39; letter]]
+
+</tw-passagedata><tw-passagedata pid="29" name="Open dads&#39; letter" tags="" position="500,2300" size="100,100">(bg:#d6a676)+(text-colour:black)
+
+[13/12/2012
+
+Dear Jack,
+			Your mother is dead, and I think I will be next. (text-colour:red)[Doctor Phillips] told the family that she was poisoned. If we weren&#39;t paranoid and worried, we are now. I bet it was (text-colour:red)[Melissa]; she was ordered by Leon to drop the food off. She and Jason might have teamed up, and they never liked us.
+            
+            Melissa has been following me around lately. Milly realised and tried to stay near me, but if we need someone to survive to tell you the truth, Milly needs to survive. Leon has been taking her for walks to help clear her head. I hope she will be alright and not mourn for us.
+            
+            I&#39;m proud of you, son.
+            
+            Love Dad.]
+            
+            
+         [[Close Dads letter]]</tw-passagedata><tw-passagedata pid="30" name="Close Dads letter" tags="" position="500,2425" size="100,100">Folding up the letter. I put the letter in my pocket, like I did with mum&#39;s letter.
+
+Two letter are in the (text-colour:blue)[inventory]
+
+Melissa was always a sweet but ditsy individual. It would be werid if she was following dad... she&#39;s very clumsy. I will go talk to her.
+
+[[Interrogate Melissa]]
+
+</tw-passagedata><tw-passagedata pid="31" name="Interrogate Melissa" tags="" position="500,2550" size="100,100">Melissa was one of the main maids of the mansion... she had so much work to do. I always said we should hire more maids to keep her company, but she always smiled and said she was ok.
+
+[[Hi Melissa]]
+
+[[Are you ok Melissa?]]
+
+[[ What happened to dad?]]
+
+[[Were you following dad?]]
+
+[[Who was next?]] 
+
+[[Are you the killer Melissa]]</tw-passagedata><tw-passagedata pid="32" name="inventory" tags="" position="300,1300" size="100,100">Read:
+
+[[Open the mums letter]]
+
+[[Open dads&#39; letter]]
+
+[[Open Milly&#39;s Letter]] 
+
+[[Read Uncle Shaun&#39;s Letter]] 
+
+[[Open Grandma&#39;s letter]] 
+
+[[Open Gisella&#39;s letter]] 
+
+[[Open Grandads letter]] 
+
+[[Read Uncle Lewis&#39;s Letter]] 
+
+[[Read Auntie Donna&#39;s letter]] 
+
+[[Read Charlies letter]] 
+
+[[Read Billy&#39;s letter]] 
+
+
+
+Return to : [[Do you know the killer?]]
+</tw-passagedata><tw-passagedata pid="33" name="Hi Melissa" tags="" position="500,2675" size="100,100">Hi Master Jack. Welcome Home!
+
+[[Interrogate Melissa]] </tw-passagedata><tw-passagedata pid="34" name="Are you ok Melissa?" tags="" position="625,2675" size="100,100">I guess... everything happened so quickly. The next one died when you tried to figure out how they died. I was scared that oue staff would be next.
+
+[[Interrogate Melissa]] 
+</tw-passagedata><tw-passagedata pid="35" name=" What happened to dad?" tags="" position="375,2675" size="100,100">I was tasked with the laundry that day by Leon. On my way to get your father&#39;s laundry, I found him... he was stabbed multiple times. There was blood everywhere,and it was a pain to clean up.
+
+[[Interrogate Melissa]] 
+
+</tw-passagedata><tw-passagedata pid="36" name="Were you following dad?" tags="" position="500,2800" size="100,100">Yes, I was. Leon asked me to keep an eye on him since your mother passed,and we wanted to keep montioring the grieving process.
+
+[[Interrogate Melissa]] 
+</tw-passagedata><tw-passagedata pid="37" name="Who was next?" tags="" position="625,2800" size="100,100">The next person was Milly, your sister.
+
+[[Interrogate Melissa]] 
+
+[[Go to Milly&#39;s Room]]
+
+</tw-passagedata><tw-passagedata pid="38" name="Are you the killer Melissa" tags="" position="375,2800" size="100,100">No.
+
+[[Interrogate Melissa]] </tw-passagedata><tw-passagedata pid="39" name="Go to Milly&#39;s Room" tags="" position="625,2925" size="100,100">Milly never let me go into her room, not ever. Especially after I read her diary when we were fourteen. She still holds me to her revenge plan to this day. Sadly, she wont&#39; be able to do it now. She died so young.
+
+[[Look under the pink bed]]
+[[Behind family photo]]
+[[Milly&#39;s Diary]]
+
+</tw-passagedata><tw-passagedata pid="40" name="Look under the pink bed" tags="" position="625,3050" size="100,100">When we were bored, we always brought my blue duvet and tied it to her pink bed to make a pillow fort. We had flashlights, snacks and drinks. We stayed up most of the night talking and complaining about the little things in our life... it was our birthday tradition... last time we did this was when I was leaving for university... wish I could have had the tradition one more time.
+
+[[Go to Milly&#39;s Room]] </tw-passagedata><tw-passagedata pid="41" name="Behind family photo" tags="" position="750,3050" size="100,100">Milly and I were twins, always joined at the hip. The photo she keeps on the side desk table is the one mum has in her bedroom... i might give it at try.
+
+[[Look behind the photo]]
+</tw-passagedata><tw-passagedata pid="42" name="Milly&#39;s Diary" tags="" position="500,3050" size="100,100">This was the diary that I read. She always had a crush on Leon when we were growing up. His dad used to work for us, and when Leon was old enough, he took over the job. I never knew if she still had a crush on him... she wouldn&#39;t have told me... she always tried to keep the romance out of her life. 
+
+[[Go to Milly&#39;s Room]] </tw-passagedata><tw-passagedata pid="43" name="Look behind the photo" tags="" position="750,3175" size="100,100">There is something there.
+
+[[ Answer Milly&#39;s Question]]
+
+</tw-passagedata><tw-passagedata pid="44" name=" Answer Milly&#39;s Question" tags="" position="750,3300" size="100,100">&#39;&#39;Question&#39;&#39;
+
+According to the Guinness World Records,how long was the biggest pillow fort ever made?
+
+[[300.5 metres squared]]
+
+[[625.8 metres squared]]
+
+[[543.6 metres squared]]
+
+</tw-passagedata><tw-passagedata pid="45" name="300.5 metres squared" tags="" position="750,3425" size="100,100">Wrong answer.
+
+Try again.
+
+[[ Answer Milly&#39;s Question]] </tw-passagedata><tw-passagedata pid="46" name="625.8 metres squared" tags="" position="875,3425" size="100,100">Correct Answer.
+
+I open the back of the the photo, and there is a folded-up letter.
+
+[[Open Milly&#39;s Letter]]</tw-passagedata><tw-passagedata pid="47" name="543.6 metres squared" tags="" position="625,3425" size="100,100">Wrong answer.
+
+Try again.
+
+[[ Answer Milly&#39;s Question]] </tw-passagedata><tw-passagedata pid="48" name="Open Milly&#39;s Letter" tags="" position="875,3550" size="100,100">(bg:#d6a676)+(text-colour:black)[
+14/12/2012
+
+Dear Brother,
+
+I know that you probably realised by now, but I&#39;m the only one alive in the house of the four of us.. Dad was found with twelve stab wounds to the ches;, it was done with anger and intent. But the walks with Leon that Dad ordered were a  distraction.Was (text-colour:red)[Lucas] always creepy when doing the security checks with the three German Shepards? They sure are angry, those dogs. I&#39;m scared they will attack me on the evening walk. I think (text-colour:red)[Uncle Shaun] was going to the vet tomorrow. Maybe check on him.
+
+If i&#39;m next, I love you, stupid.
+Get our revenge.
+
+Love your dumb twin. Milly.]
+
+[[Close Milly&#39;s letter]]</tw-passagedata><tw-passagedata pid="49" name="Close Milly&#39;s letter" tags="" position="875,3675" size="100,100">I fold the letter up and put it in my pocket.
+
+Three letters were added to the (text-colour:blue) [inventory] 
+
+Lucas was a sweet man. He is divorced and rarely see his child due to work, so the mother looks after the child constantly... he was the only one brave enough to handle those dogs... I will go talk to him.
+
+[[Interrogate Lucas]]
+</tw-passagedata><tw-passagedata pid="50" name="Interrogate Lucas" tags="" position="875,3800" size="100,100">Lucas has been working with us since he was only 25 , it&#39;s been twenty years already,and he watched us grow up... I worry about what he has seen.
+
+[[Hi Lucas]]
+
+[[Are you ok Lucas?]]
+
+[[What happened Lucas]]
+
+[[Where were the dogs at the time]]
+
+[[Why did you have the night off]]
+
+[[Who was next Lucas?]]
+
+[[Are you the killer Lucas]]
+
+</tw-passagedata><tw-passagedata pid="51" name="Hi Lucas" tags="" position="875,3925" size="100,100">Hi Buddy, Welcome home. This Christmas will be different for you. Sorry for your loss.
+
+[[Interrogate Lucas]] </tw-passagedata><tw-passagedata pid="52" name="Are you ok Lucas?" tags="" position="1000,3925" size="100,100">I shouldn&#39;t have had the night off.If I had worked, none of this would have happened. I feel so guilty.
+
+[[Interrogate Lucas]] </tw-passagedata><tw-passagedata pid="53" name="What happened Lucas" tags="" position="750,3925" size="100,100">Well, to my knowledge, the dogs must have gotten out or been let out since the lock was missing and they saw something, most likely thought it was an intruder...unfortunately, it was your sister. I wonder why her walk was at night...
+
+[[Interrogate Lucas]] </tw-passagedata><tw-passagedata pid="54" name="Where were the dogs at the time" tags="" position="875,4050" size="100,100">When I left, they were locked in the dog house. They spend most of their time there since it&#39;s a significant area to stay in, especially as it has heating.
+
+[[Interrogate Lucas]] </tw-passagedata><tw-passagedata pid="55" name="Why did you have the night off" tags="" position="1000,4050" size="100,100">It was my daughter&#39;s tenth birthday. Double digits are a big step in life, you know.
+
+[[Interrogate Lucas]] </tw-passagedata><tw-passagedata pid="56" name="Who was next Lucas?" tags="" position="750,4050" size="100,100">Your Uncle Shaun was next.
+
+[[Interrogate Lucas]] 
+
+[[Go to Uncle Shauns Room]]</tw-passagedata><tw-passagedata pid="57" name="Are you the killer Lucas" tags="" position="875,4175" size="100,100">No.
+
+[[Interrogate Lucas]] </tw-passagedata><tw-passagedata pid="58" name="Go to Uncle Shauns Room" tags="" position="750,4175" size="100,100">Uncle Shaun always lived in his garage. He was so obsessed with cars Auntie Gisella was constantly worried he would divorce her for one. But Uncle Shaun always loved Gisella no matter what car she bought him next, and he always put her first.
+
+[[Check the Garage]]
+</tw-passagedata><tw-passagedata pid="59" name="Check the Garage" tags="" position="750,4300" size="100,100">Inside the garage is the broken Aston Martin which Uncle Shaun treated as his baby. Maybe he left something in there.
+
+[[Open the car door]]
+</tw-passagedata><tw-passagedata pid="60" name="Open the car door" tags="" position="750,4425" size="100,100">It&#39;s locked.
+
+[[Answer the Car Puzzle]]
+
+</tw-passagedata><tw-passagedata pid="61" name="Answer the Car Puzzle" tags="" position="750,4550" size="100,100">&#39;&#39;Question&#39;&#39;
+What is the value of a used 2012 Aston Martin V12 Vantage range from?
+
+[[$39,709 to $73,307]]
+
+[[$40,659 to $80,000]]
+
+[[$25,000 to $65,309]]</tw-passagedata><tw-passagedata pid="62" name="$39,709 to $73,307" tags="" position="750,4675" size="100,100">Correct.
+
+The car door is unlocked.
+
+
+[[Go inside the car]]
+
+</tw-passagedata><tw-passagedata pid="63" name="$40,659 to $80,000" tags="" position="875,4675" size="100,100">Wrong answer. 
+
+Try again.
+
+[[Answer the Car Puzzle]] </tw-passagedata><tw-passagedata pid="64" name="$25,000 to $65,309" tags="" position="625,4675" size="100,100">Wrong answer.
+
+Try Again.
+
+[[Answer the Car Puzzle]] </tw-passagedata><tw-passagedata pid="65" name="Go inside the car" tags="" position="750,4800" size="100,100">Opening car door, glass is everywhere, from the crack in the windshield. On the passenger seat floor is a folded-up piece of paper... it is a letter.
+
+[[Read Uncle Shaun&#39;s Letter]]
+
+</tw-passagedata><tw-passagedata pid="66" name="Read Uncle Shaun&#39;s Letter" tags="" position="750,4925" size="100,100">(bg:#d6a676)+ (text-colour:black)[
+
+15/12/2012
+
+Dear Squirt,
+
+I have some bad news, your sister was attacked by the security dogs yesterday. Lucas had the night off, so there was no security, but I don&#39;t believe him. I&#39;m sure you already used your brain and asked him questions, but Leon shot the dogs and took them to the vet to be put down. Can&#39;t have another event like that again. Next it time might be grandma. She does love her horses.
+
+Anyway, i&#39;m going to the shop to get some flowers for Gisella, it might cheer her up. (text-colour:red)[Patrick] completed an MOT yesterday, but there&#39;s another light coming up on the dash, and I will probably ask him about it when I get back.
+
+See you soon.
+
+Uncle Shaun.]
+
+
+[[Close Uncle Shaun&#39;s letter]]
+</tw-passagedata><tw-passagedata pid="67" name="Close Uncle Shaun&#39;s letter" tags="" position="750,5050" size="100,100">I close up the letter and put it in my pocket.
+
+Four letters were added to(text-colour:blue) [inventory] 
+
+Patrick is a name I last heard of a while ago. I never liked him,but hey, each to their own. I will talk to him about the car...
+
+[[Interrogate Patrick]]
+</tw-passagedata><tw-passagedata pid="68" name="Interrogate Patrick" tags="" position="750,5175" size="100,100">Patrick was a big fellow. Big muscles, a thick beard and a constant smell of sweat and fish . He had poor hygiene, and that never changed.
+
+[[Hi Patrick]]
+[[Are you ok Patrick?]]
+[[What happened to Uncle Shaun ?]]
+[[After the accident, was there anything wrong with the car?]]
+[[Who was next Patrick?]]
+[[Are you the killer Patrick?]]
+
+</tw-passagedata><tw-passagedata pid="69" name="Hi Patrick" tags="" position="687.5,5300" size="100,100">Hello mate, see your back for Christmas
+
+[[Interrogate Patrick]] </tw-passagedata><tw-passagedata pid="70" name="After the accident, was there anything wrong with the car?" tags="" position="875,5425" size="100,100">When the car was returned to me, it was utterly destroyed. The front was smashed in, and the windshield had a massive crack across it.. Apparently, the brakes were cut, and the suspension had come off. I would have realised if these were broken during the MOT.
+
+[[Interrogate Patrick]] </tw-passagedata><tw-passagedata pid="71" name="Who was next Patrick?" tags="" position="625,5425" size="100,100">Your grandmother was next.
+
+[[Interrogate Patrick]] 
+
+[[Go to Grandma&#39;s room]]
+</tw-passagedata><tw-passagedata pid="72" name="Are you the killer Patrick?" tags="" position="750,5550" size="100,100">No.
+
+[[Interrogate Patrick]] </tw-passagedata><tw-passagedata pid="73" name="What happened to Uncle Shaun ?" tags="" position="750,5425" size="100,100">I had gotten the car a couple of days before the incident for the yearly MOT. The check only consisted of needing the brakes to be tightened a bit. But it was completely road safe before Leon picked it up, ready for Shaun to drive... I can&#39;t believe it was the car that did him in.
+
+[[Interrogate Patrick]] </tw-passagedata><tw-passagedata pid="74" name="Are you ok Patrick?" tags="" position="875,5300" size="100,100">Best I can be mate. I am trying to understand how the accident occured, and I had just fixed the car.
+
+[[Interrogate Patrick]] </tw-passagedata><tw-passagedata pid="75" name="Go to Grandma&#39;s room" tags="" position="625,5550" size="100,100">I remember when grandma hadn&#39;t gotten into horse riding. She was always at in her room, in the conservatory that grandad built her when they bought the house. Almost half her room was an observatory. Always knitting the yearly scarfs that she constantly made us. That was until Uncle Roger died of Cancer... she took on horse riding... it was his favourite thing to do.
+
+She stopped knitting straight after his death and didn&#39;t want to celebrate Christmas traditions anymore.
+
+[[Look behind Uncle Roger&#39;s Photo]]
+
+[[Look behind the horse statue]]
+
+[[Look in the knitting box]]
+</tw-passagedata><tw-passagedata pid="76" name="Look behind Uncle Roger&#39;s Photo" tags="" position="625,5675" size="100,100">Although Uncle Roger died a while ago. She always kept the photo close to her heart... she stopped staying in Grandads room when he died... something broke in her that day.
+
+[[Go to Grandma&#39;s room]] </tw-passagedata><tw-passagedata pid="77" name="Look behind the horse statue" tags="" position="562.5,5800" size="100,100">This horse statue was what grandma got Uncle Roger for his 21st birthday, and  it was to keep his spirit in the household...keeping this statue.
+
+[[Go to Grandma&#39;s room]] 
+</tw-passagedata><tw-passagedata pid="78" name="Look in the knitting box" tags="" position="687.5,5800" size="100,100">This was the box in that grandma held all their knitting tools 
+
+[[Attempt to open the box]]
+
+</tw-passagedata><tw-passagedata pid="79" name="Attempt to open the box" tags="" position="687.5,5925" size="100,100">You must answer the following:
+
+QUESTION
+
+As an estimation, in what century did hand knitting become introduced to the UK?
+
+[[1500]]
+
+[[1600]]
+
+[[1900]]
+</tw-passagedata><tw-passagedata pid="80" name="1500" tags="" position="687.5,6050" size="100,100">Correct answer.
+
+[[Open the box]]
+</tw-passagedata><tw-passagedata pid="81" name="1600" tags="" position="812.5,6050" size="100,100">Wrong answer.
+
+&#39; It was estimated that at the end of 16th century, there was an annual need in England alone of 10 million pairs of stockings&#39;
+
+Try again.
+
+[[Attempt to open the box]] </tw-passagedata><tw-passagedata pid="82" name="1900" tags="" position="562.5,6050" size="100,100">Wrong answer.
+
+Try again.
+
+[[Attempt to open the box]] </tw-passagedata><tw-passagedata pid="83" name="Open the box" tags="" position="687.5,6175" size="100,100">There is a letter in the box, hidden under all the balls of yarn and the different-sized knitting needles.
+
+[[Open Grandma&#39;s letter]]
+</tw-passagedata><tw-passagedata pid="84" name="Open Grandma&#39;s letter" tags="" position="687.5,6300" size="100,100">(bg:#d6a676)+(text-colour:black)[
+
+16/12/2012
+
+Dear Jack,
+
+How is my favourite grandchild? I hope Oxford is treating you well! I&#39;m proud of you. I&#39;m alright, grieving as our family gets smaller. First, your mother, father, sister and Shaun succumbed to death. Murdered by his car, his treasure other than Gisella. Poor Gisella. I will tell her after my horse riding trip across the fields today.
+
+(text-colour:red)[Noah], the new stable boy, is doing well, he is scared of horses ironically, but I&#39;m teaching him. He will be amazing soon and needs to overcome his fear.
+
+Hope to see you at Christmas.
+
+Love Grandma]
+
+[[Close Grandma&#39;s letter]]</tw-passagedata><tw-passagedata pid="85" name="Close Grandma&#39;s letter" tags="" position="687.5,6425" size="100,100">I close the letter and put it in my pocket.
+
+Five letters were added to the (text-colour:blue) [inventory] 
+
+Noah... I hadn&#39;t met him yet, but according to mum, he was a petite and frail boy. He was an orphan looking for a job, so grandma hired him to look after the stables. He was going to take anything, but he didn&#39;t expect horses, but he still took the job.
+
+[[Interrogate Noah]]
+</tw-passagedata><tw-passagedata pid="86" name="Interrogate Noah" tags="" position="687.5,6550" size="100,100">Noah is currently very pale and still shaking, looking in shock. Poor boy.
+
+[[Hi Noah]]
+[[ Jack is fine,Are you ok Noah?]]
+[[What happened that day?]]
+[[How did you find her?]]
+[[Who did you go to?]]
+[[Who was next Noah?]]
+[[Are you the killer Noah?]]
+</tw-passagedata><tw-passagedata pid="87" name="Hi Noah" tags="" position="687.5,6675" size="100,100">Hello sir, Master Jack, sorry, what do I call you again?
+
+[[Interrogate Noah]] </tw-passagedata><tw-passagedata pid="88" name=" Jack is fine,Are you ok Noah?" tags="" position="812.5,6675" size="100,100">I&#39;m scared sir. I should have known; she wouldn&#39;t have been out that long. I should have tried to find her earlier.
+
+[[Interrogate Noah]] </tw-passagedata><tw-passagedata pid="89" name="What happened that day?" tags="" position="562.5,6675" size="100,100">The Mistress came for her daily horse ride and seemed more on edge than usual. She took Misty, Rogers&#39; old horse, and never returned. It was about 6 PM. I was waiting to close up the stable, but I have a terrible gut feeling. So I conquered my fear and got on Lambert to try and find her.
+
+[[Interrogate Noah]] </tw-passagedata><tw-passagedata pid="90" name="Who did you go to?" tags="" position="812.5,6800" size="100,100">I went to Leon, and when Mistress started to set off, she said if something happened to get Leon straight away.
+
+[[Interrogate Noah]] 
+
+</tw-passagedata><tw-passagedata pid="91" name="How did you find her?" tags="" position="700,6800" size="100,100">She way lying at the start of the entrance of the field, about 1/2 a mile from the stable.She was stomped to dead and Misty was no where to be seen... Oh god, I feel sick.
+
+[[Interrogate Noah]] </tw-passagedata><tw-passagedata pid="92" name="Are you the killer Noah?" tags="" position="687.5,6925" size="100,100">No Jack, please believe me. I didn&#39;t kill anyone.
+
+[[Interrogate Noah]] </tw-passagedata><tw-passagedata pid="93" name="Who was next Noah?" tags="" position="562.5,6800" size="100,100">Your Auntie Gisella was next, Jack... I&#39;m sorry
+
+[[Interrogate Noah]] 
+[[Go to Gisella&#39;s room]]</tw-passagedata><tw-passagedata pid="94" name="Go to Gisella&#39;s room" tags="" position="562.5,6925" size="100,100">Auntie Gisella was always a healthy, productive person in her younger days before she got into a skiing accident that left her paralysed from the waist down. It destroyed her mentally,  but Uncle Shaun looked after her and always loved her. I assumed she got hit first due to being the weakest link... I wonder how she got into that situation.
+
+[[Look behind the skis]]
+[[Look in wheelchair pocket]]
+
+</tw-passagedata><tw-passagedata pid="95" name="Look behind the skis" tags="" position="500,7050" size="100,100">She keeps the skis that paralysed her in her room. She never wanted to part from them even though looking at them depressed her and made her shelter away from everyone. She was constantly in a lousy mood straight the accident, but after a while, she grew accustomed to the new life she had to live.
+
+[[Go to Gisella&#39;s room]]
+
+</tw-passagedata><tw-passagedata pid="96" name="Look in wheelchair pocket" tags="" position="625,7050" size="100,100">I look into the wheelchair&#39;s pocket, there is a folded letter.
+
+[[Open Gisella&#39;s letter]]
+
+</tw-passagedata><tw-passagedata pid="97" name="Open Gisella&#39;s letter" tags="" position="625,7175" size="100,100">(bg:#d6a676)+ (text-colour:black)[
+
+17/12/2012
+
+Dear who ever is left.
+
+I assume you are reading this, Jack. I have no hope...we will all die, one by one, we will all die. My amazing husband, the love of my life, is dead, my mother-in-law is dead. Father has been trying to mask his grief by constantly visiting the shooting range. He speaks to (text-colour:red)[Doctor Phillips] daily to ask about my health.
+
+Doctor Phillips keeps injecting new medication to try and stop the pain. The rash keeps growing, and they&#39;ve started turning into lumps filled with green puss.... I am next...
+
+I am going to reunite with my soulmate soon..
+
+Goodbye Jack]
+
+
+[[Close Gisella&#39;s letter]]</tw-passagedata><tw-passagedata pid="98" name="Close Gisella&#39;s letter" tags="" position="625,7300" size="100,100">I close the letter and fold it. I put it in my pocket.
+
+Six letters  were added to the (text-colour:blue) [inventory]
+
+Doctor Phillips is an old man who has been here since Uncle Shaun was born. My grandad hired him to help grandma when she was pregnant, and stayed ever since.
+
+[[Interrogate Doctor Phillips]]</tw-passagedata><tw-passagedata pid="99" name="Interrogate Doctor Phillips" tags="" position="625,7425" size="100,100">Doctor Phillips constantly stays at the desk in his office.He rarely leaves the building... he will be there...
+
+Doctor Phillips sat at his desk, filling out lots and lots of paperwork.
+
+[[Hi Doc]]
+[[Are you ok Doctor?]]
+[[What happened the day of Gisellas death?]]
+[[What could have been the cause of death?]]
+[[Who had authority to go into the room]]
+[[ Who was next Doc?]]
+[[Are you the killer Doctor Phillips?]]</tw-passagedata><tw-passagedata pid="100" name="Hi Doc" tags="" position="625,7550" size="100,100">	Hello, Young Master Jack. What can I do for you today?
+    
+    [[Interrogate Doctor Phillips]] </tw-passagedata><tw-passagedata pid="101" name="Are you ok Doctor?" tags="" position="750,7550" size="100,100">I&#39;m a Doctor,and I must always be prepared for these situations.
+
+[[Interrogate Doctor Phillips]] </tw-passagedata><tw-passagedata pid="102" name="Who had authority to go into the room" tags="" position="750,7675" size="100,100">Other than me, it was Leon, Master and Melissa.
+
+[[Interrogate Doctor Phillips]] </tw-passagedata><tw-passagedata pid="103" name=" Who was next Doc?" tags="" position="500,7675" size="100,100">Master, well, your grandfather was next young master, Jack
+
+[[Interrogate Doctor Phillips]]
+[[Go to Grandads room]]
+</tw-passagedata><tw-passagedata pid="104" name="Are you the killer Doctor Phillips?" tags="" position="625,7800" size="100,100">No.
+
+[[Interrogate Doctor Phillips]] </tw-passagedata><tw-passagedata pid="105" name="What could have been the cause of death?" tags="" position="625,7675" size="100,100">It could be anything.There were signs of suffocation and overdose when I completed the autopsy... these might have been it
+
+[[Interrogate Doctor Phillips]] </tw-passagedata><tw-passagedata pid="106" name="What happened the day of Gisellas death?" tags="" position="500,7550" size="100,100">I was looking at Mistress&#39;s body, when Mistress Gisella&#39;s heart montior started declining. It was a werid situation. She was fine before I left to go to the autopsy room..
+
+[[Interrogate Doctor Phillips]] </tw-passagedata><tw-passagedata pid="107" name="Go to Grandads room" tags="" position="500,7800" size="100,100">Grandad used to be really happy and jolly before Uncle Roger died. It&#39;s been years since i&#39;ve seen him smile...well, to me anyway...he smiled to everyone else but not me. Maybe I reminded him of Uncle Roger too much. Following in the detective&#39;s footsteps. After Uncle Roger&#39;s death, he went to the shooting range everyday, he&#39;s been going less. but when he was grieving, he went for hours. Grandma annoyed at him for a while, but he slowly got better.
+
+[[Look behind anniversary photo]]
+[[Look behind the air rifle]]
+
+</tw-passagedata><tw-passagedata pid="108" name="Look behind anniversary photo" tags="" position="450,7925" size="100,100">This was taken by Dad on Grandma and Grandads twenty-fifth anniversary. It was very emotional for them... god that feels like last year....
+
+[[Go to Grandads room]]
+</tw-passagedata><tw-passagedata pid="109" name="Look behind the air rifle" tags="" position="562.5,7925" size="100,100">There is a piece of paper sticking out of the barrel.
+
+You must answer the question to acquire this paper
+
+[[Answer Grandads&#39; Question]]
+</tw-passagedata><tw-passagedata pid="110" name="Answer Grandads&#39; Question" tags="" position="562.5,8050" size="100,100">&#39;&#39;Question&#39;&#39;
+
+What type of gun was the main firearm used by the British Empire and Commonwealth?
+
+
+[[Lee-Enfield]]
+
+[[Bren Light Machine Gun]]
+
+[[Sten]]
+
+</tw-passagedata><tw-passagedata pid="111" name="Lee-Enfield" tags="" position="562.5,8175" size="100,100">Correct answer.
+
+You acquire the piece of paper.
+
+It is a folded-up letter.
+
+[[Open Grandads letter]]</tw-passagedata><tw-passagedata pid="112" name="Bren Light Machine Gun" tags="" position="687.5,8175" size="100,100">Wrong answer.
+
+A Bren Light Machine Gun was not the Main fire arm but was a gun that was used.
+
+Try again.
+
+[[Answer Grandads&#39; Question]] </tw-passagedata><tw-passagedata pid="113" name="Sten" tags="" position="437.5,8175" size="100,100">Wrong answer.
+
+A Sten was not the main fire arm but was a gun that was used.
+
+Try again.
+
+[[Answer Grandads&#39; Question]]
+</tw-passagedata><tw-passagedata pid="114" name="Open Grandads letter" tags="" position="562.5,8300" size="100,100">(bg:#d6a676)+(text-colour:black)[
+
+18/12/2012
+
+Jack, My boy.
+
+You need to help us. The police refuse to listen. We spoke of hiring a detective, but you&#39;re the best in the Oxford Squad. You will solve this.
+
+(text-colour:red)[Bob] has been seeing me more at the shooting range. He&#39;s been setting off more cannons to help me get rid of my anger and grief. Elizabeth has left me. Gisella passed, and the disease got worse. We don&#39;t even know what it was. But eyes constantly follow us. Lewis has started to have panic attacks but he is still in the garden all the time, tending to the roses.
+
+We need your help..
+
+Grandad]
+
+
+[[Close Grandads letter]]</tw-passagedata><tw-passagedata pid="115" name="Close Grandads letter" tags="" position="562.5,8425" size="100,100">I fold up the letter and putitinto my pocket.
+
+Seven Letters  were added to the (text-colour:blue) [inventory]
+
+
+Bob worked at the shooting range. He didn&#39;t actually work for the family but was a friend to Grandma and Grandad. He knows people in the family by name but has yet to meet us adequately..Introductions are in order....
+
+[[Interrogate Bob]]</tw-passagedata><tw-passagedata pid="116" name="Interrogate Bob" tags="" position="562.5,8550" size="100,100">Bob stands in his boring uniform, looking bored, he looks younger than expected, but the wrinkles around his eyes show that he is older than he seems.
+
+[[Hi Bob]]
+[[Are you ok Bob?]]
+[[What happened on the day?]]
+[[Where was grandad at the time?]]
+[[When did you turn the cannon off?]]
+[[What did you see?]]
+[[Who was the next to die?]]
+[[Are you the killer Bob]]</tw-passagedata><tw-passagedata pid="117" name="Hi Bob" tags="" position="562.5,8675" size="100,100">Hello Sir. Oh! You&#39;re one of the Fornmost boys! Good to see you!
+
+[[Interrogate Bob]] </tw-passagedata><tw-passagedata pid="118" name="Are you ok Bob?" tags="" position="687.5,8675" size="100,100">The reality of the situation hasn&#39;t really hit me yet. It sure was a sight to see.
+
+[[Interrogate Bob]] </tw-passagedata><tw-passagedata pid="119" name="What happened on the day?" tags="" position="437.5,8675" size="100,100">Your Grandad had asked me to join him whilst he shot at the plates, and I offered to man the cannons since he said he wanted to let off some steam... So I went to the canons
+
+[[Interrogate Bob]] </tw-passagedata><tw-passagedata pid="120" name="Where was grandad at the time?" tags="" position="562.5,8800" size="100,100">Your Grandad was up on the hill near the reception and the car park, an odd spot, but he always chooses that spot.
+
+[[Interrogate Bob]]
+
+</tw-passagedata><tw-passagedata pid="121" name="When did you turn the cannon off?" tags="" position="687.5,8800" size="100,100">When none of the plates was being broken,the gunshots stopped after a while.... about ten minutes....
+
+[[Interrogate Bob]] </tw-passagedata><tw-passagedata pid="122" name="What did you see?" tags="" position="437.5,8800" size="100,100">I saw your Grandad lying on the floor with a bullet wound in his head.
+
+[[Interrogate Bob]] 
+
+</tw-passagedata><tw-passagedata pid="123" name="Who was the next to die?" tags="" position="562.5,8925" size="100,100">According to the gossip going around the range, a Lewis who went next.
+
+[[Interrogate Bob]] 
+
+[[Go to Uncle Lewis&#39;s room]]
+
+</tw-passagedata><tw-passagedata pid="124" name="Are you the killer Bob" tags="" position="687.5,8925" size="100,100">Nope, never leave this place. I even sleep here, so nope.
+
+[[Interrogate Bob]] </tw-passagedata><tw-passagedata pid="125" name="Go to Uncle Lewis&#39;s room" tags="" position="562.5,9050" size="100,100">Uncle Lewis was always the introverted one of the family, always having his head in a book about poisonous plants and other flowers. He only spoke when dad used to ask him. His eyes always sparkled when he was asked about the plan for garden. He had his passions like everyone,and he rarely left that garden.
+
+[[Look at the book on the desk]]
+[[Look at the garden plan documents]]
+[[Underneath a Japanese Peace Lily]]</tw-passagedata><tw-passagedata pid="126" name="Look at the book on the desk" tags="" position="562.5,9175" size="100,100">The book  Auntie Donna got Uncle Lewis as an anniversary present,and the first anniversary present is the same book that he constantly read. He loved it, he loved Auntie Donna, and he only ever spoke energetically to her when they were together... to be honest, he spoke average speaking level to only Auntie Donna....
+
+He loved her a lot.
+
+[[Go to Uncle Lewis&#39;s room]]
+
+</tw-passagedata><tw-passagedata pid="127" name="Look at the garden plan documents" tags="" position="687.5,9175" size="100,100">This was next years garden plan with all the budgets and the different vegetables, fruits and flowers that were going in specific plots to stop diseases.... Let&#39;s see if there is a letter within the documents.
+
+[[Answer Lewis puzzle]]
+</tw-passagedata><tw-passagedata pid="128" name="Underneath a Japanese Peace Lily" tags="" position="437.5,9175" size="100,100">This was a gift that Milly and I got Lewis for Christmas one year. We always listened to him muttering under his breath. When we were ten, he mumbled that he was saving up for a Japanese Peace Lily, which was the only plant he kept in his room... he loved it... he even started crying that he was given it. Auntie Donna always found it funny.
+
+[[Go to Uncle Lewis&#39;s room]]</tw-passagedata><tw-passagedata pid="129" name="Answer Lewis puzzle" tags="" position="687.5,9300" size="100,100">&#39;&#39;QUESTION&#39;&#39;&#39;
+
+What type of flower was, is the most poisionous?
+
+[[Nerium Oleander]]
+[[Deadly Nightshade]]
+[[Aconitum]]
+
+,</tw-passagedata><tw-passagedata pid="130" name="Nerium Oleander" tags="" position="687.5,9425" size="100,100">Correct.
+
+&#39; Nerium Oleander is known to be one of the most poisonous flowers in the world that is toxic from root to tip. It looks so soothing with white, magneta and crimson colour, elegantly spreading its fragrance. The whole flower is poisonous from roots to sap to even breathing it in.&#39;
+
+[[Read Uncle Lewis&#39;s Letter]]</tw-passagedata><tw-passagedata pid="131" name="Deadly Nightshade" tags="" position="812.5,9425" size="100,100">Wrong answer.
+
+It is very poisonous but not the most... it was also used in Tim Burtons The Nightmare before Chirstmas as something that Sally uses on the Doctor Finklestein several times.
+
+Try again.
+
+[[Answer Lewis puzzle]] </tw-passagedata><tw-passagedata pid="132" name="Aconitum" tags="" position="562.5,9425" size="100,100">Wrong answer.
+
+It is a poisonous plant but is the second most poisonous...
+
+Try again.
+
+[[Answer Lewis puzzle]] </tw-passagedata><tw-passagedata pid="133" name="Read Uncle Lewis&#39;s Letter" tags="" position="687.5,9550" size="100,100">(bg:#d6a676)+(text-colour:black)[
+
+19/12/2012
+
+Everyone is dying. 
+Bob stopped the cannons when he realised he couldn&#39;t hear the gunshots anymore. Dad died from a bullet in the head. Bob already told you this, I assume. But it&#39;s only my family left: Donna has been helping Laura with the burial plots, coming back daily with dirt on her.
+
+I can&#39;t say I don&#39;t look the same, being in the garden tending to the roses ready for the graves to have some flowers. (text-colour:red)[Arthur] has been in the garden overlooking the water fountain and has been struggling with it. So I  will help him today and get it done quicker.
+
+See you at Chirstmas Jack
+Love Lewis]
+
+[[Close Lewis&#39;s Letter]]</tw-passagedata><tw-passagedata pid="134" name="Close Lewis&#39;s Letter" tags="" position="687.5,9675" size="100,100">I fold the letter and put it into my pocket.
+
+Eight letters were added to the  (text-colour:blue)  [inventory]
+
+Arthur was one of the oldest members of staff, following Doctor Phillips. He was one of the primary staff supposed to retire, but he liked doing the maintenace, especailly the garden maintenance... I will go talk to him...
+
+[[Interrogate Arthur]]
+</tw-passagedata><tw-passagedata pid="135" name="Interrogate Arthur" tags="" position="687.5,9800" size="100,100">Arthur always wears a burgundy suit which compliments the long white hair and the long white moustache.... all he needed was a monocle to compliment the outfit. He was a funny person but he was also quiet at the same time.
+
+[[Hi Arthur]]
+[[Are you ok Arthur?]]
+[[What happened on the day Arthur?]]
+[[Why did it take you so long to get the pipe?]]
+[[When you came back what did you see?]]
+[[Who was next after Lewis?]]
+[[Are you the killer Arthur?]]</tw-passagedata><tw-passagedata pid="136" name="Hi Arthur" tags="" position="687.5,9925" size="100,100">Hello Master Jack.
+
+[[Interrogate Arthur]] </tw-passagedata><tw-passagedata pid="137" name="Are you ok Arthur?" tags="" position="625,10050" size="100,100">I&#39;m old, Jack nothing phases me anymore.
+
+[[Interrogate Arthur]] </tw-passagedata><tw-passagedata pid="138" name="Are you the killer Arthur?" tags="" position="812.5,10175" size="100,100">No.
+
+[[Interrogate Arthur]] </tw-passagedata><tw-passagedata pid="139" name="Who was next after Lewis?" tags="" position="687.5,10175" size="100,100">His wife, Donna.
+
+[[Interrogate Arthur]] 
+[[ Go to Auntie Donna room]]</tw-passagedata><tw-passagedata pid="140" name="When you came back what did you see?" tags="" position="562.5,9925" size="100,100">When I returned back to the fountain, I saw Lewis blue in the face, not breathing, and eyes wide open. I tried CPR, but it didn&#39;t work, and he was gone.
+
+[[Interrogate Arthur]] </tw-passagedata><tw-passagedata pid="141" name="Why did it take you so long to get the pipe?" tags="" position="812.5,9925" size="100,100">Well, there was not a spare. I told Leon to tell Lewis I was just popping into the hardware store. The closest was B&amp;Q in the neighbouring town.
+
+[[Interrogate Arthur]] </tw-passagedata><tw-passagedata pid="142" name="What happened on the day Arthur?" tags="" position="812.5,10050" size="100,100"> I was fixing the water fountain when I asked Lewis for help. Luckily, he helped, or I would have slipped and hit my head. The U-bend pipe had split with the pressure of the water. So I told Lewis I would see if I had a spare tube.
+
+[[Interrogate Arthur]] </tw-passagedata><tw-passagedata pid="143" name=" Go to Auntie Donna room" tags="" position="687.5,10300" size="100,100">Auntie Donna was always the energetic one out of her and Lewis&#39;s family plans. She always did the extreme. She made a pet cemetary for the family. She gave everything a buria,l and she was so emotional every time.
+
+[[Look at the recipe book]]
+[[Look at the calendar filled with notes]]
+[[Behind the shovel]]</tw-passagedata><tw-passagedata pid="144" name="Look at the recipe book" tags="" position="687.5,10425" size="100,100">The recipe book that she always used ranged from appetisers to full-set meals and the most luxurious desserts. Sometimes it was handmade to include everything for every event and celebration.
+
+[[ Go to Auntie Donna room]] </tw-passagedata><tw-passagedata pid="145" name="Look at the calendar filled with notes" tags="" position="812.5,10425" size="100,100">She had every detail on this little calendar and little coloured tabs that linked to different files in the cabinet. She had birthdays, funerals, death anniversaries, anniversaries, Christmas, Easter, and Rememberence Day. It was insane.
+
+[[Look to see if there is a letter]]
+</tw-passagedata><tw-passagedata pid="146" name="Behind the shovel" tags="" position="562.5,10425" size="100,100">This was the shovel that Lewis gave her as a proposal gift. Iassume there was an inside joke somewhere.
+
+[[ Go to Auntie Donna room]] </tw-passagedata><tw-passagedata pid="147" name="Look to see if there is a letter" tags="" position="812.5,10550" size="100,100">There is a letter stuck on a snag in the calendar.
+
+[[Pull the letter off the snag]]
+</tw-passagedata><tw-passagedata pid="148" name="Pull the letter off the snag" tags="" position="812.5,10675" size="100,100">The letter comes off easy.
+
+[[Read Auntie Donna&#39;s letter]]</tw-passagedata><tw-passagedata pid="149" name="Read Auntie Donna&#39;s letter" tags="" position="812.5,10800" size="100,100">(bg:#d6a676)+ (text-colour:black)[
+
+20/12/2012
+
+Dear my son, daughter and Jack
+
+I never thought I would be digging a grave for my own husband. He drowned in the fountain when Arthur went to get a pipe joint from inside. Arthur asssumed he slipped and was knocked unconscious, and was under water.I presume Arthur told you his story,but I still think that he killed him. Leon tried to calm me down but they were all in on it. Every single last one of them. I&#39;m meeting (text-colour:red)[Laura] later to create four more graves...
+
+
+We will all die.]
+
+[[Close Donna&#39;s letter]]
+</tw-passagedata><tw-passagedata pid="150" name="Close Donna&#39;s letter" tags="" position="812.5,10925" size="100,100">I fold Donna&#39;s letter and put it into my pocket.
+
+Nine letters were added to the (text-colour:blue) [inventory]
+
+Laura was also a new person I have yet to meet, she&#39;s the new groundskeeper...The last one died or retired.... I better go introduce myself.
+
+[[Interrogate Laura]]
+</tw-passagedata><tw-passagedata pid="151" name="Interrogate Laura" tags="" position="812.5,11050" size="100,100">Laura is short in stature and has long blonde hair. She seems small for the job, but no one complained about how her job was done, so I assume she&#39;s good at it.
+
+[[Hi Laura, I&#39;m Jack]]
+[[Are you ok Laura?]]
+[[What happened to Donna?]]
+[[Did you tell the children?]]
+[[Why did you go to Leon]]
+[[Why didn&#39;t you call the police?]]
+[[Who was next Laura?]]
+[[Are you the killer Laura?]]
+</tw-passagedata><tw-passagedata pid="152" name="Hi Laura, I&#39;m Jack" tags="" position="812.5,11175" size="100,100">Hi Jack, I&#39;ve heard good things about you from your family. It&#39;s nice to finally meet you!
+
+[[Interrogate Laura]] </tw-passagedata><tw-passagedata pid="153" name="Are you ok Laura?" tags="" position="937.5,11175" size="100,100">Well, I need clarification more than anything. One moment she was there, and the next, she wasn&#39;t. Only went inside for one moment...
+
+[[Interrogate Laura]] </tw-passagedata><tw-passagedata pid="154" name="What happened to Donna?" tags="" position="750,11300" size="100,100">For one, your Auntie went CRAZY! She kept insisting that the family was going to die and digging everyone a grave. Even made you one I think. I insisted that she just needed a cuppa, so I went inside to make them... I returned; she was gone, and one of the graves was filled up.
+
+[[Interrogate Laura]] </tw-passagedata><tw-passagedata pid="155" name="Did you tell the children?" tags="" position="875,11300" size="100,100">No I didn&#39;t.I went to Leon.
+
+[[Interrogate Laura]] </tw-passagedata><tw-passagedata pid="156" name="Why did you go to Leon" tags="" position="687.5,11175" size="100,100">He&#39;s my boss, I thought he could help me find her.
+
+[[Interrogate Laura]] </tw-passagedata><tw-passagedata pid="157" name="Why didn&#39;t you call the police?" tags="" position="812.5,11425" size="100,100">They would just say that they can&#39;t confirm her missing until a bit later. No point.
+
+[[Interrogate Laura]] </tw-passagedata><tw-passagedata pid="158" name="Who was next Laura?" tags="" position="937.5,11425" size="100,100">The twins were next.
+
+[[Visit Charlies room]]
+[[Interrogate Laura]] </tw-passagedata><tw-passagedata pid="159" name="Are you the killer Laura?" tags="" position="687.5,11425" size="100,100">No.
+
+[[Interrogate Laura]] </tw-passagedata><tw-passagedata pid="160" name="Visit Charlies room" tags="" position="937.5,11550" size="100,100">The staff told me a fire had broken out, but the fire only hit the twins rooms. The rest of the house was alright. Charlie was the oldest out of her and Billy... the other set of twins in the family.She always made it evident that she was the oldest,making Billy roll his eyes. They had their own rooms but everyone needed privacy.
+
+[[Find Charlies Letter]]</tw-passagedata><tw-passagedata pid="161" name="Find Charlies Letter" tags="" position="937.5,11675" size="100,100">Looking around the room, the only thing left untouched is the ottoman at the end of the bed... it might be in there.
+
+[[ Look in the untouched ottoman]]
+</tw-passagedata><tw-passagedata pid="162" name=" Look in the untouched ottoman" tags="" position="937.5,11800" size="100,100">Inside the ottoman, there is a letter.
+
+[[Read Charlies letter]]
+
+</tw-passagedata><tw-passagedata pid="163" name="Read Charlies letter" tags="" position="937.5,11925" size="100,100">(bg:#d6a676)+ (text-colour:black)[
+
+24/12/2012
+
+Dear Jack,
+
+Mother has been missing for the last three days. Billy and I went to the family graveyard. We assume her body lies in one of the plots as there are only three open graves left. Taunting the last survivors.Alll the staff are grieving. It looks like they haven&#39;t slept. Billy and I realised that they kept glancing at Leon, almost terrified. Maybe they all are behind it. It&#39;s all of them or perhaps they all know who it is..... I smell burning.....I think the house is on fire.... I need to get to my brother.... But I am stuck. My window is locked. I&#39;m going to break it. My door is blocked......
+
+Save us, Jack.
+
+Love Charlie]
+
+[[Close Charlies Letter]]</tw-passagedata><tw-passagedata pid="164" name="Close Charlies Letter" tags="" position="937.5,12050" size="100,100">I fold the letter and put it into my pocket.
+
+Ten letters were added to the (text-colour:blue) [inventory]
+
+[[Go to find Billys letter]]</tw-passagedata><tw-passagedata pid="165" name="Go to find Billys letter" tags="" position="937.5,12175" size="100,100">Walking out of the room, something next to the hallway window catches my eye... it is a piece of paper...
+
+[[Grab the paper]]</tw-passagedata><tw-passagedata pid="166" name="Grab the paper" tags="" position="937.5,12300" size="100,100">It&#39;s a letter... I assume it&#39;s Billys.
+
+[[Read Billy&#39;s letter]]</tw-passagedata><tw-passagedata pid="167" name="Read Billy&#39;s letter" tags="" position="937.5,12425" size="100,100">(bg:#d6a676)+ (text-colour:black)[
+
+
+24/12/2012
+
+
+Dear Jack,
+
+The fire is blocking us; whether my sister Charlie is alive is unknown to me.... I am so done... I am going to die anyway... I have no one left... I might as well pass on my own way out.... Leon is trying to get all the staff out the fire exits. He thinks he will save me, but he has no one to save... I&#39;m sorry, Jack, but you&#39;re on your own.
+
+Goodbye Jack
+
+Merry Christmas.]
+
+[[Close Billy&#39;s letter]]
+
+</tw-passagedata><tw-passagedata pid="168" name="Close Billy&#39;s letter" tags="" position="937.5,12550" size="100,100">I fold up the letter and put it into my pocket.
+
+All letters are in the (text-colour:blue) [inventory]
+
+Leon has been in the family for years.Even before he worked here, he came with his dad to work all the time... this will be hard.
+
+[[Interrogate Leon]]
+</tw-passagedata><tw-passagedata pid="169" name="Interrogate Leon" tags="" position="937.5,12675" size="100,100">Leon is a lovely gentleman who likes to have fun, and he&#39;s been there for everyone... he&#39;s sometimes very strict and stoic with the staff. That&#39;s why we promoted him to head butler and the head of the staff of the mansion.... 
+
+[[Hi Leon]]
+[[How are you Leon?]]
+[[Did you taste test the food?]]
+[[Why did you tell Melissa to do the laundry?]]
+[[Did you take the dogs out the cage?]]
+[[Did you take the car to Shaun?]]
+[[What did you do with Noah?]]
+[[When did you last visit Gisella?]]
+[[Why were you at the shooting range?]]
+[[Did you tell Lewis about the pipe?]]
+[[What was you doing when Laura came to you?]]
+[[What happened with the fire?]]
+[[Are you the killer?]]
+
+</tw-passagedata><tw-passagedata pid="170" name="Hi Leon" tags="" position="937.5,12800" size="100,100">Hello Master Jack 
+
+[[Interrogate Leon]]</tw-passagedata><tw-passagedata pid="171" name="How are you Leon?" tags="" position="1062.5,12800" size="100,100">I&#39;m alright, just worried about the staff, we&#39;re out of a job now... Where we will go?
+
+[[Interrogate Leon]]
+</tw-passagedata><tw-passagedata pid="172" name="Did you taste test the food?" tags="" position="812.5,12800" size="100,100">Yes, I did. It needed some salt and some more water for the gravy mixture.
+
+[[Interrogate Jason]] </tw-passagedata><tw-passagedata pid="173" name="Why did you tell Melissa to do the laundry?" tags="" position="937.5,12925" size="100,100">That was her job for the day, I thought she couldn&#39;t hurt anyone or herself doing the laundry....
+
+[[Interrogate Leon]]
+</tw-passagedata><tw-passagedata pid="174" name="Did you take the dogs out the cage?" tags="" position="1062.5,12925" size="100,100">No, I didn&#39;t. I was walking with Mistress Milly when I heard the clanging of cage doors. So I left her to check on the dogs, but they weren&#39;t there.
+
+[[How did the dogs get out?]]
+
+</tw-passagedata><tw-passagedata pid="175" name="Did you take the car to Shaun?" tags="" position="812.5,12925" size="100,100">Yes, I did.
+
+[[Was anything wrong with the car when you got it off Patrick?]]
+</tw-passagedata><tw-passagedata pid="176" name="What did you do with Noah?" tags="" position="937.5,13050" size="100,100">I made him a cup of tea and wrapped him in a blanket. Poor boy went into shock.
+
+[[Where did Misty go?]]
+</tw-passagedata><tw-passagedata pid="177" name="When did you last visit Gisella?" tags="" position="1062.5,13050" size="100,100">I visited her the day we learned about Shaun&#39;s death, and she became so distraught....
+
+[[What was her health like before she died]]
+</tw-passagedata><tw-passagedata pid="178" name="Why were you at the shooting range?" tags="" position="812.5,13050" size="100,100">The Master asked me to drive him to the range, so I was waiting until he finished.
+
+[[Interrogate Leon]] </tw-passagedata><tw-passagedata pid="179" name="Did you tell Lewis about the pipe?" tags="" position="937.5,13175" size="100,100">I went to tell him, but I couldn&#39;t find him at all. I assume he went to the toilet and would get notified by Arthur when he was inside.
+
+[[Did you try to find him inside?]]
+</tw-passagedata><tw-passagedata pid="180" name="What was you doing when Laura came to you?" tags="" position="1062.5,13175" size="100,100">I was washing up for Jason as he wasn&#39;t feeling too well when Laura came to find me. She was a right mess.
+
+[[Why didn&#39;t you tell the twins about Donna&#39;s dissapperance?]]
+</tw-passagedata><tw-passagedata pid="181" name="What happened with the fire?" tags="" position="825,13175" size="100,100">The fire was quickly contained when the firefighters arrived. Sadly, the reporters also came, and the staff blabbed, anything for a bit of fame
+
+[[How did it start?]]
+</tw-passagedata><tw-passagedata pid="182" name="Are you the killer?" tags="" position="937.5,13300" size="100,100">No.
+
+[[Do you know the killer?]]
+
+</tw-passagedata><tw-passagedata pid="183" name="How did the dogs get out?" tags="" position="1187.5,13050" size="100,100">The lock wasn&#39;t on correctly.They are intelligent dogs,and they probably opened the cages themselves...
+
+[[Interrogate Leon]] </tw-passagedata><tw-passagedata pid="184" name="Was anything wrong with the car when you got it off Patrick?" tags="" position="687.5,13050" size="100,100">The car was fine. I admit I thought the tyres were a bit flat, and I should have gotten Patrick to put some air in them.
+
+[[Interrogate Leon]] </tw-passagedata><tw-passagedata pid="185" name="Where did Misty go?" tags="" position="1062.5,13300" size="100,100">No clue.  Misty was gone, and we had yet to find him..
+
+[[Interrogate Leon]] </tw-passagedata><tw-passagedata pid="186" name="What was her health like before she died" tags="" position="1187.5,13175" size="100,100">Her health was getting better. She had an allergic reaction before everything started, and it took her a while to recover.
+
+[[Interrogate Leon]] </tw-passagedata><tw-passagedata pid="187" name="Did you try to find him inside?" tags="" position="812.5,13300" size="100,100">I found no reason to.
+
+[[Interrogate Leon]] </tw-passagedata><tw-passagedata pid="188" name="Why didn&#39;t you tell the twins about Donna&#39;s dissapperance?" tags="" position="1187.5,13300" size="100,100">I assumed Laura would do it. She&#39;s more sympathetic than I am.
+
+[[Interrogate Leon]] </tw-passagedata><tw-passagedata pid="189" name="How did it start?" tags="" position="687.5,13300" size="100,100">Apparently, it was an electrical fire.
+
+[[Why didn&#39;t you get the twins out?]]
+
+</tw-passagedata><tw-passagedata pid="190" name="Why didn&#39;t you get the twins out?" tags="" position="687.5,13425" size="100,100">The fire was blocking me from getting to them, and they would have gotten out from the windows and closest fire exits.
+
+[[Interrogate Leon]] </tw-passagedata><tw-passagedata pid="191" name="Do you know the killer?" tags="" position="937.5,13425" size="100,100">Please choose your answer:
+
+[[Jason]]
+[[Melissa]]
+[[Lucas]]
+[[Patrick]]
+[[Noah]]
+[[ Doctor Phillips]]
+[[Bob]]
+[[Arthur]]
+[[Laura]]
+[[Leon]]
+[[All of them]]
+
+
+
+Look at the letters in your [[inventory]]</tw-passagedata><tw-passagedata pid="192" name="Jason" tags="" position="937.5,13550" size="100,100">The air seems suffocating in this house the more that I walk around it. The memories pass by as I walk through the once-filled-with-love hallways. All childhoods come to an end, and mine definitely has. I look at the land we owned from this window that haunts my room. Snow falling from the sky.
+
+I feel pain my neck. I reach up, and I start to choke.Red covers my hands. I turn behind me and meet the cold eyes of the killer and a wicked smile. I should have known, I think as i fall to the ground.
+
+&quot;Merry Christmas Jack&quot;
+
+THE END. 
+
+YOU DIED.
+
+[[TITLE PAGE]]
+</tw-passagedata><tw-passagedata pid="193" name="Melissa" tags="" position="1062.5,13550" size="100,100">The air seems suffocating in this house the more that I walk around it. The memories pass by as I walk through the once-filled-with-love hallways. All childhoods come to an end, and mine definitely has. I look at the land we owned from this window that haunts my room. Snow falling from the sky.
+
+I feel pain my neck. I reach up, and I start to choke.Red covers my hands. I turn behind me and meet the cold eyes of the killer and a wicked smile. I should have known, I think as i fall to the ground.
+
+&quot;Merry Christmas Jack&quot;
+ THE END.
+ 
+ YOU DIED.
+
+
+[[TITLE PAGE]]
+</tw-passagedata><tw-passagedata pid="194" name="Lucas" tags="" position="812.5,13550" size="100,100">The air seems suffocating in this house the more that I walk around it. The memories pass by as I walk through the once-filled-with-love hallways. All childhoods come to an end, and mine definitely has. I look at the land we owned from this window that haunts my room. Snow falling from the sky.
+
+I feel pain my neck. I reach up, and I start to choke.Red covers my hands. I turn behind me and meet the cold eyes of the killer and a wicked smile. I should have known, I think as i fall to the ground.
+
+&quot;Merry Christmas Jack&quot;
+ THE END .
+ 
+ YOU DIED.
+
+[[TITLE PAGE]]
+</tw-passagedata><tw-passagedata pid="195" name="Patrick" tags="" position="812.5,13675" size="100,100">The air seems suffocating in this house the more that I walk around it. The memories pass by as I walk through the once-filled-with-love hallways. All childhoods come to an end, and mine definitely has. I look at the land we owned from this window that haunts my room. Snow falling from the sky.
+
+I feel pain my neck. I reach up, and I start to choke.Red covers my hands. I turn behind me and meet the cold eyes of the killer and a wicked smile. I should have known, I think as i fall to the ground.
+
+&quot;Merry Christmas Jack&quot;
+
+THE END. 
+
+YOU DIED.
+[[TITLE PAGE]]
+</tw-passagedata><tw-passagedata pid="196" name="Noah" tags="" position="937.5,13675" size="100,100">The air seems suffocating in this house the more that I walk around it. The memories pass by as I walk through the once-filled-with-love hallways. All childhoods come to an end, and mine definitely has. I look at the land we owned from this window that haunts my room. Snow falling from the sky.
+
+I feel pain my neck. I reach up, and I start to choke.Red covers my hands. I turn behind me and meet the cold eyes of the killer and a wicked smile. I should have known, I think as i fall to the ground.
+
+&quot;Merry Christmas Jack&quot;
+
+THE END. 
+
+YOU DIED.
+
+[[TITLE PAGE]
+</tw-passagedata><tw-passagedata pid="197" name=" Doctor Phillips" tags="" position="1062.5,13675" size="100,100">The air seems suffocating in this house the more that I walk around it. The memories pass by as I walk through the once-filled-with-love hallways. All childhoods come to an end, and mine definitely has. I look at the land we owned from this window that haunts my room. Snow falling from the sky.
+
+I feel pain my neck. I reach up, and I start to choke.Red covers my hands. I turn behind me and meet the cold eyes of the killer and a wicked smile. I should have known, I think as i fall to the ground.
+
+&quot;Merry Christmas Jack&quot;
+
+THE END. 
+
+YOU DIED.
+
+[[TITLE PAGE]
+</tw-passagedata><tw-passagedata pid="198" name="Bob" tags="" position="937.5,13800" size="100,100">The air seems suffocating in this house the more that I walk around it. The memories pass by as I walk through the once-filled-with-love hallways. All childhoods come to an end, and mine definitely has. I look at the land we owned from this window that haunts my room. Snow falling from the sky.
+
+I feel pain my neck. I reach up, and I start to choke.Red covers my hands. I turn behind me and meet the cold eyes of the killer and a wicked smile. I should have known, I think as i fall to the ground.
+
+&quot;Merry Christmas Jack&quot;
+
+THE END. 
+
+YOU DIED..
+
+[[TITLE PAGE]]
+</tw-passagedata><tw-passagedata pid="199" name="Arthur" tags="" position="1062.5,13800" size="100,100">The air seems suffocating in this house the more that I walk around it. The memories pass by as I walk through the once-filled-with-love hallways. All childhoods come to an end, and mine definitely has. I look at the land we owned from this window that haunts my room. Snow falling from the sky.
+
+I feel pain my neck. I reach up, and I start to choke.Red covers my hands. I turn behind me and meet the cold eyes of the killer and a wicked smile. I should have known, I think as i fall to the ground.
+
+&quot;Merry Christmas Jack&quot;
+
+THE END. 
+
+YOU DIED.
+
+[[TITLE PAGE]]
+</tw-passagedata><tw-passagedata pid="200" name="Laura" tags="" position="812.5,13800" size="100,100">The air seems suffocating in this house the more that I walk around it. The memories pass by as I walk through the once-filled-with-love hallways. All childhoods come to an end, and mine definitely has. I look at the land we owned from this window that haunts my room. Snow falling from the sky.
+
+I feel pain my neck. I reach up, and I start to choke.Red covers my hands. I turn behind me and meet the cold eyes of the killer and a wicked smile. I should have known, I think as i fall to the ground.
+
+&quot;Merry Christmas Jack&quot;
+
+THE END. 
+
+YOU DIED.
+
+[[TITLE PAGE]]
+</tw-passagedata><tw-passagedata pid="201" name="Leon" tags="" position="875,13925" size="100,100">You found me! I knew you would. Jack Fornmost! The young detective of the Fornmost family. The prodigy who couldn&#39;t save his family... sad, really.
+
+[[Why did you kill them?]]
+</tw-passagedata><tw-passagedata pid="202" name="All of them" tags="" position="1000,13925" size="100,100">The air seems suffocating in this house the more that I walk around it. The memories pass by as I walk through the once-filled-with-love hallways. All childhoods come to an end, and mine definitely has. I look at the land we owned from this window that haunts my room. Snow falling from the sky.
+
+I feel pain my neck. I reach up, and I start to choke.Red covers my hands. I turn behind me and meet the cold eyes of the killer and a wicked smile. I should have known, I think as i fall to the ground.
+
+&quot;Merry Christmas Jack&quot;
+
+THE END. 
+
+YOU DIED.
+
+[[TITLE PAGE]]
+</tw-passagedata><tw-passagedata pid="203" name="Why did you kill them?" tags="" position="875,14050" size="100,100">I was sick and tired of the way you all treated me, my dad, who used to work for you. DEAD! Because of you and your family. The rich and famous Fornmost family never cared for their staff. The new staff, Oh they cared about them but me? I was never thought about.
+
+[[Did the others not suspect you?]]
+
+</tw-passagedata><tw-passagedata pid="204" name="Did the others not suspect you?" tags="" position="875,14175" size="100,100">Oh please, it took me twelve days to nearly kill everyone. When it got to Donna, Oh sad that one.... fought against me, well that was until I buried her alive. No one could hear her screams... they started  to suspect me, though... the staff especially. Billy and Charlie realised too late, with the fire and all.... I didn&#39;t actually start the fire. It was almost destiny. Now all that is left is you... Merry Christmas Jack....Goodbye.....
+
+
+
+Leon charges towards you:
+[[Get your revenge]]
+[[Run away and call the police]]
+
+</tw-passagedata><tw-passagedata pid="205" name="Get your revenge" tags="" position="875,14300" size="100,100">Leon pushes you to the ground. He pulls out a knife. You:
+
+[[Push him off you]]
+</tw-passagedata><tw-passagedata pid="206" name="Run away and call the police" tags="" position="1000,14300" size="100,100">You run away, and the sound of heavy footsteps follows your movements. You run out of the house and pull out your phone calling the police. You turn around to look at the home. In each of your family&#39;s bedroom windows stand the ghostly figures of your family. Have you betrayed them by not getting revenge? Or did you do the right thing?
+
+The police arrive and swarm the house.Leon is found and dragged into the police car by handcuffs. He smirks at you as he gets in.
+
+[[One Year Later]]</tw-passagedata><tw-passagedata pid="207" name="One Year Later" tags="" position="1000,14425" size="100,100">A year has passed since the event. You look through your family photo album. Your doorbell rings, and you go to answer.
+
+[[Open the door]]</tw-passagedata><tw-passagedata pid="208" name="Open the door" tags="" position="1000,14550" size="100,100">Opening the door, you feel a sharp pain in your abdomen. Looking down, you see a knife wedged in it. Blood pours out. You follow the blade looking at the individual who hurt you. Standing there with an evil smile and a gleam in their eye.....
+
+Leon...
+
+&quot;Merry Christmas Jack&quot;
+ 
+ THE END.
+ 
+ [[TITLE PAGE]]</tw-passagedata><tw-passagedata pid="209" name="TITLE PAGE" tags="" position="625,14375" size="100,200">
+
+(enchant:?page,(bg:white))
+
+(text-colour:red)+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)+(font:&#39;Mountains of Christmas&#39;)+(text-style:&quot;bold&quot;)[Twelve Days of Christmas- The Murder of the Fornmost Family]
+
+
+
+
+
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[(text-colour:red)[ [[The Beginning]]
+
+[[Credits]]]
+]
+</tw-passagedata><tw-passagedata pid="210" name="Credits" tags="" position="625,14650" size="100,100">(enchant:?page,(bg:white))
+
+(text-colour:red)
+
+[Storyworld and characters created by Jade Sanderson Starkie
+
+Created in Twine.
+
+Music: https://www.youtube.com/watch?v=mb9A46gZ9iI
+Carol of the Bells (piano version)- Christmas Special: Patrik Pietschmann]
+
+[[TITLE PAGE]]
+</tw-passagedata><tw-passagedata pid="211" name="Push him off you" tags="" position="875,14425" size="100,100">You try to push him off you,and he is pretty heavy. TRY AGAIN.
+
+[[PUSH HIM OFF YOU!!!]]</tw-passagedata><tw-passagedata pid="212" name="PUSH HIM OFF YOU!!!" tags="" position="875,14550" size="100,100">You shove him off you,and he slightly moves backwards.
+
+[[Roll over!!]]
+</tw-passagedata><tw-passagedata pid="213" name="Roll over!!" tags="" position="875,14675" size="100,100">You roll over, bringing him with you. You now overpower him,and you take the knife from him. Do you:
+
+[[Put the knife down?]]
+
+[[Drive the knife into his chest?]]</tw-passagedata><tw-passagedata pid="214" name="Put the knife down?" tags="" position="875,14800" size="100,100">You put the knife down, hesitating to do anything. You don&#39;t want to kill him, you don&#39;t want to lose your job... you miss your family....
+
+This hesitation allows Leon to snatch the knife from you and drive it through your chest.
+
+You gasp at the pain. Blood trickles from the side of your mouth as you fall to the ground, eyes wide open.
+
+&quot;Merry Christmas Jack&quot;
+
+THE END.
+
+[[TITLE PAGE]]
+</tw-passagedata><tw-passagedata pid="215" name="Drive the knife into his chest?" tags="" position="1000,14800" size="100,100">The once-cold smile drops from his face as blood pours from the side of his mouth. The life drains from his eyes. You leave the knife in his chest as you stumble to your feet. You stare at the body as flashing red and blue lights enter into the driveway.
+
+MERRY CHRISTMAS.
+
+THE END.
+
+[[Credits]] 
+
+[[TITLE PAGE]]
+</tw-passagedata><tw-passagedata pid="216" name="hal.tracks" tags="startup" position="450,14575" size="100,100">background: https://c0008825.github.io/Twine/blob/main/AUDIO/robotmusic.mp3
+
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
