@@ -9,11 +9,18 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Inorganic Choices.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Inorganic Choices" startnode="1" creator="Twine" creator-version="2.6.0" format="Harlowe" format-version="3.3.4" ifid="C8B7A205-03E1-4E53-B260-F1897A4E0FA3" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Title Screen" tags="" position="175,150" size="100,100">Inorganic Choices
+<tw-storydata name="Inorganic Choices" startnode="1" creator="Twine" creator-version="2.6.0" format="Harlowe" format-version="3.3.4" ifid="C8B7A205-03E1-4E53-B260-F1897A4E0FA3" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Title Screen" tags="" position="25,375" size="100,100">(enchant:?page,(bg:black)+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
 
-[[Start]]
 
-[[Credits]]</tw-passagedata><tw-passagedata pid="2" name="Start" tags="" position="100,75" size="100,100">(set:$life to 75)(set: $population to 10000000000)(set: $battery to 77)(set: $talkeddj to 0)(set: $ishuman to 0)(set: $metamygdala to 0)(set: $talkedbear to 0)(set: $cassettestate to 0)(set: $observatorytaskdone to 0)(set: $lambda to 0)Current Year: 2023
+
+
+
+(text-size:2)[Inorganic Choices]
+
+(text-style:&quot;italic&quot;)+(text-colour:green)[[START]]
+
+(text-style:&quot;italic&quot;)+(text-colour:green)[[CREDITS]]</tw-passagedata><tw-passagedata pid="2" name="START" tags="" position="25,75" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(set:$chronophora to 0)(set:$linawagner to 0)(set:$drwagner to 0)(set:$wage to 75)(set:$life to 75)(set: $population to 10000000000)(set: $battery to 77)(set: $talkeddj to 0)(set: $ishuman to 0)(set: $metamygdala to 0)(set: $talkedbear to 0)(set: $cassettestate to 0)(set: $observatorytaskdone to 0)(set: $lambda to 0)Current Year: 2023
 
 (if: $ishuman is 0) [Current Battery: $battery %]
 
@@ -27,15 +34,21 @@ The other door is labeled &quot;Hallway&quot;.
 
 On the floor of the room is a cassette tape.
 
-[[Go Outside-&gt;Outside Not Allowed]]
 
-[[Go into the Hallway]]
+(text-style:&quot;italic&quot;)+(text-colour:green)[[Go Outside-&gt;Outside Not Allowed]]
 
-[[Pick up the cassette tape]]
+(text-style:&quot;italic&quot;)+(text-colour:green)[[Go into the Hallway]]
 
-[[Wait-&gt;Still in Start Room]]</tw-passagedata><tw-passagedata pid="3" name="Credits" tags="" position="300,25" size="100,100">Created by C0008825
+(text-style:&quot;italic&quot;)+(text-colour:green)[[Pick up the cassette tape]]
 
-[[Title Screen]] </tw-passagedata><tw-passagedata pid="4" name="Outside Not Allowed" tags="" position="350,200" size="100,100">(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+(text-style:&quot;italic&quot;)+(text-colour:green)[[Wait-&gt;Still in Start Room]]</tw-passagedata><tw-passagedata pid="3" name="CREDITS" tags="" position="175,300" size="100,100">(enchant:?page,(bg:black)+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+
+
+Created by C0008825
+
+
+(text-style:&quot;italic&quot;)+(text-colour:green)[[Title Screen]] </tw-passagedata><tw-passagedata pid="4" name="Outside Not Allowed" tags="" position="175,50" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
 You approach the door to the outside.
 
@@ -45,46 +58,52 @@ It doesn&#39;t open.
 
 Text appears on a screen next to the door.
 
-&quot;NO ORGANIC LIFE DETECTED, DOOR WILL NOT OPEN&quot;
+(text-colour:red)[&quot;NO ORGANIC LIFE DETECTED, DOOR WILL NOT OPEN&quot;]
 
-(if: $battery &gt; 0) [[Do Something Else-&gt;Still in Start Room]] (if: $battery &lt; 1) [[Power down-&gt;No Battery Ending]] </tw-passagedata><tw-passagedata pid="5" name="Go into the Hallway" tags="" position="575,150" size="100,100">(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0) [[Do Something Else-&gt;Still in Start Room]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1) [[Power down-&gt;No Battery Ending]] </tw-passagedata><tw-passagedata pid="5" name="Go into the Hallway" tags="" position="325,425" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
 You are in a long hallway.
 
 In the hallway are doors to various rooms.
 
-(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](if: $battery &gt; 0) [[Go to Entrance Room]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go to Entrance Room]]
 
-[[Go to Listening Room]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go to Listening Room]]
 
-[[Go to Information Room]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go to Information Room]]
 
-[[Go to Kitchen]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go to Kitchen]]
 
-[[Go to Play Room]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go to Play Room]]
 
-[[Go to Master Bedroom]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go to Master Bedroom]]
 
-[[Go to Child&#39;s Bedroom]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go to Child&#39;s Bedroom]]
 
-(if: $observatorytaskdone is 0)[[Go to observatory]](if: $observatorytaskdone is 1)[[Go to observatory-&gt; Go to observatory 2]]
+(if: $observatorytaskdone is 0)+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go to Observatory]](if: $observatorytaskdone is 1)+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go to Observatory-&gt; Go to Observatory 2]]
 
-[[Go to Cloning Room]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go to Cloning Room]]
 
-[[Go to Geneticist Room]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go to Geneticist Room]]
 
-[[Go to Beautician Room]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go to Beautician Room]]
 
-[[Wait-&gt;Go into the Hallway]]</tw-passagedata><tw-passagedata pid="6" name="Pick up the cassette tape" tags="" position="450,50" size="100,100">(set: $cassettestate to 1)
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Wait-&gt;Go into the Hallway]]</tw-passagedata><tw-passagedata pid="6" name="Pick up the cassette tape" tags="" position="175,175" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
 (if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
 You pick up a cassette tape.
-
+(set: $cassettestate to 1)
 Written on the cassette tape is:
 
-To Wagner Beta #2.
+&quot;To Wagner Beta #2.&quot;
 
-(if: $battery &gt; 0)[[Do something else-&gt;Still in Start Room]] (if: $battery &lt; 1) [[Power down-&gt;No Battery Ending]] </tw-passagedata><tw-passagedata pid="7" name="Still in Start Room" tags="" position="575,175" size="100,100">(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do something else-&gt;Still in Start Room]] (text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1) [[Power down-&gt;No Battery Ending]] </tw-passagedata><tw-passagedata pid="7" name="Still in Start Room" tags="" position="325,300" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
 You are still in a room.
 
@@ -94,17 +113,21 @@ One door is still labeled &quot;Outside&quot;.
 
 The other door is still labeled &quot;Hallway&quot;.
 
-(if: $cassettestate is 0)[Still on the floor of the room is a cassette tape.]
 
-(if: $battery &gt; 0) [[Go Outside-&gt;Outside Not Allowed]](if: $battery &lt; 1) [[Power down-&gt;No Battery Ending]] 
 
-(if: $battery &gt; 0) [[Go into the Hallway]]
+(if: $cassettestate is 0)+(text-colour:green)[Still on the floor of the room is a cassette tape.]
 
-(if: $battery &gt; 0) +(if: $cassettestate is 0)[[Pick up the cassette tape]]
+(if: $battery &gt; 0)+(text-colour:green)[[Go Outside-&gt;Outside Not Allowed]](if: $battery &lt; 1)+(text-colour:green)[[Power down-&gt;No Battery Ending]] 
 
-(if: $battery &gt; 0) [[Wait-&gt;Still in Start Room]]
+(if: $battery &gt; 0)+(text-colour:green)[[Go into the Hallway]]
 
-</tw-passagedata><tw-passagedata pid="8" name="No Battery Ending" tags="" position="200,300" size="100,100">You have been powered down.
+(if: $battery &gt; 0) +(if: $cassettestate is 0)+(text-colour:green)[[Pick up the cassette tape]]
+
+(if: $battery &gt; 0)+(text-colour:green)[[Wait-&gt;Still in Start Room]]
+
+</tw-passagedata><tw-passagedata pid="8" name="No Battery Ending" tags="" position="175,425" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+
+You have been powered down.
 
 You have run out of battery.
 
@@ -112,21 +135,28 @@ You can no longer be re-charged.
 
 The future remains unknown.
 
-[[Credits]]</tw-passagedata><tw-passagedata pid="9" name="Charge Battery" tags="" position="1500,450" size="100,100">(set: $battery to 100)
+(text-colour:green)+(text-style:&quot;italic&quot;)[[CREDITS]]</tw-passagedata><tw-passagedata pid="9" name="Charge Battery" tags="" position="575,175" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to 100)Current Battery: $battery %]
 
 You have been plugged into a charging point.
 
 This is a safe place to power down.
 
+
+
 [[Power down-&gt;Charging Ending]]
 
-[[Disconnect from charger-&gt;Go to charger room]]</tw-passagedata><tw-passagedata pid="10" name="Human Ending" tags="" position="450,275" size="100,100">You have exited the laboratory.
+[[Disconnect from charger-&gt;Go to charger room]]</tw-passagedata><tw-passagedata pid="10" name="Human Ending" tags="" position="25,225" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+You have exited the laboratory.
 
 You are outside.
 
 Humanity&#39;s future is yours to decide.
 
-[[Credits]]</tw-passagedata><tw-passagedata pid="11" name="Go to Entrance Room" tags="" position="650,75" size="100,100">(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+
+(text-colour:green)+(text-style:&quot;italic&quot;)[[CREDITS]]</tw-passagedata><tw-passagedata pid="11" name="Go to Entrance Room" tags="" position="325,50" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
 You are in the entrance room.
 
@@ -138,15 +168,16 @@ The other door is labeled &quot;Hallway&quot;.
 
 (if: $cassettestate is 0)[On the floor of the entrance room is a cassette tape.]
 
-(if: $battery &gt; 0)+(if: $ishuman is 0)[[Go Outside-&gt;Outside Not Allowed 2]] (if: $battery &gt; 0)+(if: $ishuman is 1)[[Go Outside-&gt;Human Ending]] (if: $battery &lt; 1) [[Power down-&gt;No Battery Ending]] 
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if: $ishuman is 0)[[Go Outside-&gt;Outside Not Allowed 2]] (text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if: $ishuman is 1)[[Go Outside-&gt;Human Ending]] (text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1) [[Power down-&gt;No Battery Ending]] 
 
-(if: $battery &gt; 0)[[Go into the Hallway]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go into the Hallway]]
 
-(if: $battery &gt; 0)+(if: $cassettestate is 0)[[Pick up the cassette tape-&gt;Pick up the cassette tape 2]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if: $cassettestate is 0)[[Pick up the cassette tape-&gt;Pick up the cassette tape 2]]
 
-(if: $battery &gt; 0)[[Wait-&gt;Go to Entrance Room]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Wait-&gt;Go to Entrance Room]]
 
-</tw-passagedata><tw-passagedata pid="12" name="Outside Not Allowed 2" tags="" position="775,0" size="100,100">(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+</tw-passagedata><tw-passagedata pid="12" name="Outside Not Allowed 2" tags="" position="450,50" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
 You approach the door to the outside.
 
@@ -156,45 +187,56 @@ It doesn&#39;t open.
 
 Text appears on a screen next to the door.
 
-&quot;NO ORGANIC LIFE DETECTED, DOOR WILL NOT OPEN&quot;
+(text-colour:red)[&quot;NO ORGANIC LIFE DETECTED, DOOR WILL NOT OPEN&quot;]
 
-(if: $battery &gt; 0)[[Do Something Else-&gt;Go to Entrance Room]] (if: $battery &lt; 1) [[Power down-&gt;No Battery Ending]] </tw-passagedata><tw-passagedata pid="13" name="Pick up the cassette tape 2" tags="" position="575,225" size="100,100">(set: $cassettestate to 1)
+
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0) [[Do Something Else-&gt;Still in Start Room]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1) [[Power down-&gt;No Battery Ending]] </tw-passagedata><tw-passagedata pid="13" name="Pick up the cassette tape 2" tags="" position="325,175" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
 (if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
 You pick up a cassette tape.
-
+(set: $cassettestate to 1)
 Written on the cassette tape is:
 
-To Wagner Beta #2.
+&quot;To Wagner Beta #2.&quot;
 
-(if: $battery &gt; 0)[[Do something else-&gt;Go to Entrance Room]](if: $battery &lt; 1) [[Power down-&gt;No Battery Ending]] </tw-passagedata><tw-passagedata pid="14" name="Become human" tags="" position="1050,0" size="100,100">(set: $ishuman to 1)
+
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do something else-&gt;Go to Entrance Room]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1) [[Power down-&gt;No Battery Ending]] </tw-passagedata><tw-passagedata pid="14" name="Become human" tags="" position="325,675" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(set: $ishuman to 1)
+
 You feel different.
 
 More alive.
 
 [[Exit test tube-&gt;1409]]
 
-</tw-passagedata><tw-passagedata pid="15" name="Charging Ending" tags="" position="125,625" size="100,100">Current Year: 2053
+</tw-passagedata><tw-passagedata pid="15" name="Charging Ending" tags="" position="175,925" size="100,100">(enchant:?page,(bg:black)+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+Current Year: 2053
 
 Approximate Population: $population
 
-Average Monthly Wage: $wage
+Average Monthly Wage:£ $wage 
 
-Average Life Expectancy: $life
+Average Life Expectancy: $life years
 
 This is the future you chose.
 
-[[Credits]]</tw-passagedata><tw-passagedata pid="16" name="Go to charger room" tags="" position="1800,125" size="100,100">You are in the charger room.
+(text-colour:green)+(text-style:&quot;italic&quot;)[[CREDITS]]</tw-passagedata><tw-passagedata pid="16" name="Go to charger room" tags="" position="575,50" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+You are in the charger room.
 
 In the room is a door labelled &quot;Hallway&quot;.
 
 And a charging port.
 
-[[Go into the Hallway]] 
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go into the Hallway]] 
 
-[[Charge Battery]] 
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if: $ishuman is 0)[[Charge Battery]] 
 
-[[Wait-&gt;Go to charger room]] </tw-passagedata><tw-passagedata pid="17" name="Go to Listening Room" tags="" position="725,175" size="100,100">(set: $battery to $battery -1)Current Battery: $battery %
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Wait-&gt;Go to charger room]] </tw-passagedata><tw-passagedata pid="17" name="Go to Listening Room" tags="" position="175,550" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
 You are in the listening room.
 
@@ -202,14 +244,14 @@ In this room is:
 
 A lot of audio equipment.
 
-(if: $talkeddj is 0)And a large blue robot. (if: $talkeddj is 1)And DJ Lil Funk 8001.
+(if: $talkeddj is 0)[And a large blue robot.] (if: $talkeddj is 1)[And DJ Lil Funk 8001.]
 
-(if: $talkeddj is 0)[[Talk to blue robot]](if: $talkeddj is 1)[[Talk to DJ Lil Funk 8001]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if: $talkeddj is 0)[[Talk to blue robot]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if: $talkeddj is 1)[[Talk to DJ Lil Funk 8001]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1) [[Power down-&gt;No Battery Ending]] 
 
-[[Go into the Hallway]] 
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go into the Hallway]] 
 
-[[Wait-&gt;Go to Listening Room]] </tw-passagedata><tw-passagedata pid="18" name="Go to observatory" tags="" position="1200,825" size="100,100">(set: $battery to $battery -1)
-Current Battery: $battery %
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Wait-&gt;Go to Listening Room]] </tw-passagedata><tw-passagedata pid="18" name="Go to Observatory" tags="" position="325,1050" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
 You are inside the observatory.
 
@@ -219,11 +261,14 @@ inside the observatory is a strange telescope.
 
 On the telescope is a big red button.
 
-(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](if: $battery &gt; 0) [[Press the button]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Press the button]]
 
-(if: $battery &gt; 0) [[Wait-&gt;Go to observatory]] 
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go into the Hallway]]
 
-(if: $battery &gt; 0) [[Go into the Hallway]]</tw-passagedata><tw-passagedata pid="19" name="Press the button" tags="" position="1325,575" size="100,100">The Strange telescope begins to glow red.
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Wait-&gt;Go to Observatory]] </tw-passagedata><tw-passagedata pid="19" name="Press the button" tags="" position="575,300" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+The Strange telescope begins to glow red.
 
 A laser shoots out of the telescope.
 (set: $observatorytaskdone to 1)(set: $population to 0)
@@ -231,9 +276,12 @@ The laser flies into the sky and then into space.
 
 The laser hits the moon,obliterating it.
 
-[[Do something else-&gt; Go to observatory 2]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do something else-&gt; Go to Observatory 2]]
 
-</tw-passagedata><tw-passagedata pid="20" name=" Go to observatory 2" tags="" position="1500,150" size="100,100">You are inside the observatory.
+</tw-passagedata><tw-passagedata pid="20" name=" Go to Observatory 2" tags="" position="450,550" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+You are inside the observatory.
 
 from the observatory you can see stars, planets and the moon
 
@@ -241,117 +289,159 @@ inside the observatory is a strange telescope.
 
 On the telescope is a big red button.
 
-[[Press the button-&gt;Press the button 2]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Press the button-&gt;Press the button 2]]
 
-{[[Go into the Hallway]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go into the Hallway]]
 
-[[Wait-&gt; Go to observatory 2]] 
-</tw-passagedata><tw-passagedata pid="21" name="Press the button 2" tags="" position="1650,500" size="100,100">Nothing happens.
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Wait-&gt; Go to Observatory 2]] 
+</tw-passagedata><tw-passagedata pid="21" name="Press the button 2" tags="" position="575,925" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
-[[Do something else-&gt; Go to observatory 2]]</tw-passagedata><tw-passagedata pid="22" name="Talk to blue robot" tags="" position="650,250" size="100,100">(set: $talkeddj to 1)(set: $battery to $battery -1)Current Battery: $battery %
-
-Howdy, howdy, howdy, I&#39;m DJ Lil Funk 8001
-
-The Disc Jockey Supreme.
-
-And the master of the audio equipment in this room.
-
-Can I help you?
-
-[[&quot;I just wanted to say hello.&quot;]]
-
-[[&quot;No thanks,I don&#39;t need anything.&quot;-&gt;Go to Listening Room]]
-
-(if: $cassettestate is 1)[[&quot;Can you play this cassette tape?&quot;]]
-
-
-</tw-passagedata><tw-passagedata pid="23" name="Talk to DJ Lil Funk 8001" tags="" position="475,850" size="100,100">(set: $battery to $battery -1)Current Battery: $battery %
-
-Can I help you?
-
-[[&quot;I just wanted to say hello.&quot;]]
-
-[[&quot;No thanks,I don&#39;t need anything.&quot;-&gt;Go to Listening Room]]
-
-(if: $cassettestate is 1)[[&quot;Can you play this cassette tape?&quot;]]</tw-passagedata><tw-passagedata pid="24" name="&quot;Can you play this cassette tape?&quot;" tags="" position="525,225" size="100,100">(set: $battery to $battery -1)Current Battery: $battery %
-
-A cassette tape?
-
-Wow, it&#39;s been a while since ive been able to play one of these.
-
-Sure thing.
+Nothing happens.
 
 
 
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do something else-&gt; Go to Observatory 2]]</tw-passagedata><tw-passagedata pid="22" name="Talk to blue robot" tags="" position="450,300" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(set: $talkeddj to 1)(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
-//Testing Testing//
+(text-colour:blue)[Howdy, howdy, howdy, I&#39;m DJ Lil Funk 8001]
 
-One Two Three
+(text-colour:blue)[The Disc Jockey Supreme.]
 
-Hello, this is &#39;&#39;Dr. Faust Wagner&#39;&#39;, and if you are hearing this message you should be my creation: &#39;&#39;Wagner Beta #2.&#39;&#39;
+(text-colour:blue)[And the master of the audio equipment in this room.]
 
-I&#39;m sorry for your creation and the short existence you will be forced to live, you are a robot who was made to have the morality and brain of a human, unfortunately you will not live for a long time but that short life is necessary, the human species is fast approaching a situation I find upsetting, I have created you to change the future, the reason for your short life span is I wanted you to be able to affect this future impartially, with no ulterior motive, and so I ensured you could not be a part of the future.
+(text-colour:blue)[Can I help you?]
 
-To provide you with the chance to change the future I have built numerous that you can choose whether or not to interact with to affect the human world.
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[&quot;I just wanted to say hello.&quot;]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1) [[Power down-&gt;No Battery Ending]] 
 
-If you want to see what happens in the future you create, then find the charging station and power down, you will be given updates on what you have created before being powered down permanently.
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0) [[&quot;No thanks,I don&#39;t need anything.&quot;-&gt;Go to Listening Room]]
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0) +(if: $cassettestate is 1)[[&quot;Can you play this cassette tape?&quot;]]
 
 
+</tw-passagedata><tw-passagedata pid="23" name="Talk to DJ Lil Funk 8001" tags="" position="450,175" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(set: $talkeddj to 1)(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+(text-colour:blue)[Can I help you?]
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[&quot;I just wanted to say hello.&quot;]]
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[&quot;No thanks,I don&#39;t need anything.&quot;-&gt;Go to Listening Room]]
+
+(if: $cassettestate is 1)+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[&quot;Can you play this cassette tape?&quot;]]</tw-passagedata><tw-passagedata pid="24" name="&quot;Can you play this cassette tape?&quot;" tags="" position="450,425" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+(text-colour:blue)[A cassette tape?]
+
+(text-colour:blue)[Wow, it&#39;s been a while since ive been able to play one of these.]
+
+(text-colour:blue)[Sure thing.]
+
+
+
+
+(text-colour:white)[//Testing Testing//]
+(set: $drwagner to 1)
+(text-colour:white)[One Two Three]
+
+(text-colour:white)[Hello, this is &#39;&#39;Dr. Faust Wagner&#39;&#39;, and if you are hearing this message you should be my creation: &#39;&#39;Wagner Beta #2.&#39;&#39;]
+
+(text-colour:white)[I&#39;m sorry for your creation and the short existence you will be forced to live, you are a robot who was made to have the morality and brain of a human, unfortunately you will not live for a long time but that short life is necessary, the human species is fast approaching a situation I find upsetting, I have created you to change the future, the reason for your short life span is I wanted you to be able to affect this future impartially, with no ulterior motive, and so I ensured you could not be a part of the future.]
+
+(text-colour:white)[To provide you with the chance to change the future I have built numerous that you can choose whether or not to interact with to affect the human world.]
+
+(text-colour:white)[If you want to see what happens in the future you create, then find the charging station and power down, you will be given updates on what you have created before being powered down permanently.]
+
+(text-colour:white)[Over.]
 
 (set: $cassettestate to 2)
 
-Wow thanks for that it&#39;s been too long since i&#39;ve played any audio
+(text-colour:blue)[Wow! thanks for that, it&#39;s been too long since i&#39;ve played any audio]
 
-[[&quot;No problem, Goodbye,&quot;-&gt;Go to Listening Room]]
-</tw-passagedata><tw-passagedata pid="25" name="&quot;I just wanted to say hello.&quot;" tags="" position="850,725" size="100,100">(set: $battery to $battery -1)Current Battery: $battery %
-Oh umm Hi.
 
-[[Do something else-&gt;Go to Listening Room]] </tw-passagedata><tw-passagedata pid="26" name="Go to Information Room" tags="" position="1550,625" size="100,100">You are in the information Room.
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[&quot;No problem, Goodbye,&quot;-&gt;Go to Listening Room]]
+</tw-passagedata><tw-passagedata pid="25" name="&quot;I just wanted to say hello.&quot;" tags="" position="450,925" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+(text-colour:blue)[Oh umm Hi.]
+
+
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do something else-&gt;Go to Listening Room]] </tw-passagedata><tw-passagedata pid="26" name="Go to Information Room" tags="" position="575,675" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+You are in the information Room.
 
 In this room is a bunch of complex machinery.
 
 Hooked up to the machinery is a grey robot
 
-(if: $metamygdala is 0)[[Talk to grey robot]] (if: $metamygdala is 1) [[Talk to Amygdala-&gt;Talk to grey robot]] 
 
-[[Go into the Hallway]] </tw-passagedata><tw-passagedata pid="27" name="Go to Kitchen" tags="" position="1650,750" size="100,100">
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if: $metamygdala is 0)[[Talk to grey robot]] (text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if: $metamygdala is 1) [[Talk to Amygdala-&gt;Talk to grey robot]] 
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go into the Hallway]] 
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Wait-&gt;Go to Information Room]] </tw-passagedata><tw-passagedata pid="27" name="Go to Kitchen" tags="" position="575,425" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
 You are in the kitchen.
 
 Anything worth having in here has long gone.
 
-[[Go into the Hallway]] </tw-passagedata><tw-passagedata pid="28" name="Go to Play Room" tags="" position="1025,875" size="100,100">You are in the play room.
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go into the Hallway]] 
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Wait-&gt;Go to Kitchen]]</tw-passagedata><tw-passagedata pid="28" name="Go to Play Room" tags="" position="325,800" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+You are in the play room.
 
 In this room sits a pink teddy bear robot.
 
 
-[[Go into the Hallway]] 
 
-[[Talk to bear robot]]</tw-passagedata><tw-passagedata pid="29" name="Go to Master Bedroom" tags="" position="1325,875" size="100,100">
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go into the Hallway]] 
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Talk to bear robot]]
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Wait-&gt;Go to Play Room]] </tw-passagedata><tw-passagedata pid="29" name="Go to Master Bedroom" tags="" position="700,300" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
 You are in the master bed room.
 
 the room is empty
 
-[[Leave Room-&gt;Go into the Hallway]]</tw-passagedata><tw-passagedata pid="30" name="Talk to grey robot" tags="" position="1800,875" size="100,100">(set: $battery to $battery -1)Current Battery: $battery %
-Hello, I am Amygdala
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Leave Room-&gt;Go into the Hallway]]
 
-(if: $metamygdala is 0)[I can tell you almost anything about this laboratory if you ask the right question.] (if: $metamygdala is 1) [What would you like to ask about?]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Wait-&gt;Go to Master Bedroom]] </tw-passagedata><tw-passagedata pid="30" name="Talk to grey robot" tags="" position="575,1050" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+(text-colour:grey)[Hello, I am Amygdala]
+
+(if: $metamygdala is 0)+(text-colour:grey[I can tell you almost anything about this laboratory if you ask the right question.] (if: $metamygdala is 1)+(text-colour:grey[What would you like to ask about?]
 (set: $metamygdala to 1)
 
-[[Dr. Faust Wagner]]
 
-(if:$linawagner is 1)[[Dr. Lina Wagner]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if:$drwagner is 1)[[Dr. Faust Wagner]]
 
-(if:$talkedbear is 1)[[Felix]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if:$linawagner is 1)[[Dr. Lina Wagner]]
 
-(if:$lambda is 1)[[Lambda]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if:$talkedbear is 1)[[Felix]]
 
-(if:$chronophora is 1)[[Chronophora]]</tw-passagedata><tw-passagedata pid="31" name="Talk to bear robot" tags="" position="1300,950" size="100,100">I didn&#39;t mean to Felix.
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if:$lambda is 1)[[Lambda]]
 
-I didn&#39;t meant to.
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if:$chronophora is 1)[[Chronophora]]</tw-passagedata><tw-passagedata pid="31" name="Talk to bear robot" tags="" position="450,800" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
-[[Do Something Else-&gt;Go to Play Room]]
 
-(set:$talkedbear to 1)</tw-passagedata><tw-passagedata pid="32" name="Go to Child&#39;s Bedroom" tags="" position="900,0" size="100,100">(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+(text-colour:magenta)[I didn&#39;t mean to Felix.]
+(set:$talkedbear to 1)
+(text-colour:magenta)[I didn&#39;t meant to.]
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do Something Else-&gt;Go to Play Room]]
+
+</tw-passagedata><tw-passagedata pid="32" name="Go to Child&#39;s Bedroom" tags="" position="325,550" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
 You are inside a child&#39;s bedroom.
 
@@ -361,38 +451,59 @@ Crayons and various toys laid across the floor.
 
 And a steel door.
 
-[[Approach Steel Door]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Approach Steel Door]]
 
-[[Go into the Hallway]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go into the Hallway]]
 
-[[Wait-&gt;Go to Child&#39;s Bedroom]]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Wait-&gt;Go to Child&#39;s Bedroom]]
 
-</tw-passagedata><tw-passagedata pid="33" name="Approach Steel Door" tags="" position="1000,0" size="100,100">There is a screen on the door:
+</tw-passagedata><tw-passagedata pid="33" name="Approach Steel Door" tags="" position="175,800" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
-Please Enter Passcode.
+There is a screen on the door:
 
-[[1234-&gt;Fail Steel Door]]
+&quot;Please Enter Passcode.&quot;
+
+
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[1234-&gt;Fail Steel Door]]
 
 [[2023-&gt;Fail Steel Door]] 
 
 [[1994-&gt;Fail Steel Door]] 
 
-(if: $readfelix is 1) [[1409]]</tw-passagedata><tw-passagedata pid="34" name="Go to Cloning Room" tags="" position="950,775" size="100,100">
+(if: $readfelix is 1) [[1409]]</tw-passagedata><tw-passagedata pid="34" name="Go to Cloning Room" tags="" position="450,1050" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
 You are in a dusty room.
 
 It looks like whatever used to be here has been moved.
 
-[[Go into the Hallway]]</tw-passagedata><tw-passagedata pid="35" name="1409" tags="" position="1025,100" size="100,100">You are in a small room.
 
-(if: $ishuman is 0)[Inside the room is a human in a giant tube.]
 
-(if: $ishuman is 0)[In front of the human is a blank monitor]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go into the Hallway]]
 
-(if: $ishuman is 0)[Next to the monitor is a device that says brain pattern transfer]
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Wait-&gt;Go to Cloning Room]] </tw-passagedata><tw-passagedata pid="35" name="1409" tags="" position="175,675" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
-(if: $ishuman  is 0)[[Put on brain pattern transfer device-&gt;Become human]] </tw-passagedata><tw-passagedata pid="36" name="Fail Steel Door" tags="" position="1100,0" size="100,100">Nothing happens.
+You are in a small room.
 
-[[Do Something Else-&gt;Go to Child&#39;s Bedroom]]</tw-passagedata><tw-passagedata pid="37" name="Go to Geneticist Room" tags="" position="1500,750" size="100,100">
+(if: $ishuman is 0)[Inside the room is a human in a giant test tube.](if: $ishuman is 1)[Inside the room is a giant test tube.]
+
+In front of the test tube is a blank monitor.
+
+(if: $ishuman is 0)[Next to the monitor is a device that says brain pattern transfer](if: $ishuman is 1)[Next to the monitor is a hunk of metal wearing a device that says brain pattern transfer]
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if: $ishuman is 0)[[Put on brain pattern transfer device-&gt;Become human]] 
+
+[[Leave Room-&gt;Go to Child&#39;s Bedroom]] </tw-passagedata><tw-passagedata pid="36" name="Fail Steel Door" tags="" position="450,675" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+Nothing happens.
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if: $ishuman is 0)[[[Do Something Else-&gt;Go to Child&#39;s Bedroom]]</tw-passagedata><tw-passagedata pid="37" name="Go to Geneticist Room" tags="" position="575,550" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
 You are in the Geneticist Room.
 
 In this room is a Container Labelled &quot;Lambda Virus&quot;
@@ -401,36 +512,59 @@ Next to the Container is a lever.
 
 Next to the first container is another container labelled &quot;Bisectional Virus&quot;
 
-(if: $lambdavirus is 0)[[Pull Lambda Virus Container Lever]](if: $lambdavirus is 1)[[The Lever does nothing]]
-
-(if: $bisectionalvirus is 0)[[Bisectional Virus Container Lever]](if: $bisectionalvirus is 1)[[The Lever does nothing]]
-
-[[Go into the Hallway]]</tw-passagedata><tw-passagedata pid="38" name="Dr. Faust Wagner" tags="" position="2050,750" size="100,100">Dr. Faust Wagner
 
 
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if: $lambdavirus is 0)[[Pull Lambda Virus Container Lever]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if: $lambdavirus is 1)[[The Lever does nothing]]
 
-Creator Bisectional Virus and the Lambda Virus</tw-passagedata><tw-passagedata pid="39" name="Dr. Lina Wagner" tags="" position="2050,925" size="100,100">
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if: $bisectionalvirus is 0)[[Bisectional Virus Container Lever]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if: $bisectionalvirus is 1)[[The Lever does nothing]]
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Go into the Hallway]]
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Wait-&gt;Go to Geneticist Room]]</tw-passagedata><tw-passagedata pid="38" name="Dr. Faust Wagner" tags="" position="700,675" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:grey))
+(if: $ishuman is 0)+(text-colour:green) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+Dr. Faust Wagner.
+
+Genius in Roboticism and Virology.
+
+Creator Bisectional Virus and the Lambda Virus.
+
+Creator of all the robots in this laboratory.
+
+
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do Something Else-&gt;Go to Information Room]]</tw-passagedata><tw-passagedata pid="39" name="Dr. Lina Wagner" tags="" position="700,925" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:grey))
+(if: $ishuman is 0)+(text-colour:green) [(set: $battery to $battery -1)Current Battery: $battery %]
+
 Dr. Lina Wagner (née Braun)
 
 Born 1978
 
 Ex-wife of Dr. Faust Wagner.
-
+(set: $drwagner to 1)
 Discoverer of the Lambda Gene.
 (set: $lambda to 1)
 Creator of Chronophora.
 (set: $chronophora to 1)
 
-</tw-passagedata><tw-passagedata pid="40" name="Felix" tags="" position="1625,1100" size="100,100">Felix Wagner 
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do Something Else-&gt;Go to Information Room]]</tw-passagedata><tw-passagedata pid="40" name="Felix" tags="" position="575,800" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:grey))
+(if: $ishuman is 0)+(text-colour:green) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+Felix Wagner 
 
 Born 14/09/2014
 
 Died 05/02/2019
 
 Son of Dr. Faust Wagner and Dr. Lina Wagner
-(set: $readfelix to 1)
+(set: $readfelix to 1) (set: $drwagner to 1) (set: $linawagner to 1)
+His father claimed he was going to be just like him, jokingly nicknaming him Wagner Beta.
 
-[[Do Something Else-&gt;Go to Information Room]]</tw-passagedata><tw-passagedata pid="41" name="Lambda" tags="" position="1925,1125" size="100,100">The Lambda Gene.
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do Something Else-&gt;Go to Information Room]]</tw-passagedata><tw-passagedata pid="41" name="Lambda" tags="" position="700,1050" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:grey))
+(if: $ishuman is 0)+(text-colour:green) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+The Lambda Gene.
 
 A Gene that appears more commonly in people who are monetarily successful.
 
@@ -438,15 +572,25 @@ How and why this Gene is linked monetary success is unknown.
 
 Discovered by Dr. Lina Wagner
 (set: $linawagner to 1)
-[[Do Something Else-&gt;Go to Information Room]]</tw-passagedata><tw-passagedata pid="42" name="Pull Lambda Virus Container Lever" tags="" position="1400,1025" size="100,100">(set: $lambdavirus to 1)
 
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do Something Else-&gt;Go to Information Room]]</tw-passagedata><tw-passagedata pid="42" name="Pull Lambda Virus Container Lever" tags="" position="700,425" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+(set: $lambdavirus to 1) (set:$temp to $population * 0.01) 
 A Small gas leaks out of the container.
+(set:$population to $population - $temp)
+(set:$wage to $wage * 5)
 
-[[Do Something Else-&gt;Go to Geneticist Room]]</tw-passagedata><tw-passagedata pid="43" name="The Lever does nothing" tags="" position="1625,875" size="100,100">
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do Something Else-&gt;Go to Geneticist Room]]</tw-passagedata><tw-passagedata pid="43" name="The Lever does nothing" tags="" position="700,175" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
 Nothing Happens
 
-[[Do Something Else-&gt;Go to Geneticist Room]]</tw-passagedata><tw-passagedata pid="44" name="Chronophora" tags="" position="1800,1125" size="100,100">
+
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do Something Else-&gt;Go to Geneticist Room]]</tw-passagedata><tw-passagedata pid="44" name="Chronophora" tags="" position="700,800" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:grey))
+(if: $ishuman is 0)+(text-colour:green) [(set: $battery to $battery -1)Current Battery: $battery %]
 
 Chronophora originally designed to be a beauty cream.
 
@@ -456,21 +600,44 @@ The effects of increasing human lifespan by this amount was deemed unsafe.
 
 Discovered by Dr. Lina Wagner
 (set: $linawagner to 1)
-[[Do Something Else-&gt;Go to Information Room]]</tw-passagedata><tw-passagedata pid="45" name="Bisectional Virus Container Lever" tags="" position="1550,1025" size="100,100">(set: $bisectionalvirus to 1)
 
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do Something Else-&gt;Go to Information Room]]</tw-passagedata><tw-passagedata pid="45" name="Bisectional Virus Container Lever" tags="" position="700,550" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+(set: $bisectionalvirus to 1)
+(set:$population to $population * 0.5)
 A Small gas leaks out of the container.
+(set:$wage to $wage * 2)
 
-[[Do Something Else-&gt;Go to Geneticist Room]]</tw-passagedata><tw-passagedata pid="46" name="Go to Beautician Room" tags="" position="1150,675" size="100,100">You are in the beautician room.
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do Something Else-&gt;Go to Geneticist Room]]</tw-passagedata><tw-passagedata pid="46" name="Go to Beautician Room" tags="" position="175,1050" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+You are in the beautician room.
 
 The room is empty except for a box labelled:
 
 &quot;Chronophora&quot; and a button next to it.
 
-(if:$chronophorareleased is 0)[[Press Chronophora button]] (if:$chronophorareleased is 1)[[Press Chronophora button-&gt;Chronophora Button does nothing]]</tw-passagedata><tw-passagedata pid="47" name="Chronophora Button does nothing" tags="" position="1350,1250" size="100,100">Nothing happened.
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if:$chronophorareleased is 0)[[Press Chronophora button]] 
 
-[[Do Something Else-&gt;Go to Beautician Room]]</tw-passagedata><tw-passagedata pid="48" name="Press Chronophora button" tags="" position="1100,1225" size="100,100">A gas is released into the room.
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if:$chronophorareleased is 1)[[Press Chronophora button-&gt;Chronophora Button does nothing]]
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Wait-&gt;Go to Beautician Room]] </tw-passagedata><tw-passagedata pid="47" name="Chronophora Button does nothing" tags="" position="700,50" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+Nothing happened.
+
+
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do Something Else-&gt;Go to Beautician Room]]</tw-passagedata><tw-passagedata pid="48" name="Press Chronophora button" tags="" position="325,925" size="100,100">(enchant:?page,(bg:black)+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
+
+A gas is released into the room.
 (set: $chronophorareleased to 1)
-[[Do Something Else-&gt;Go to Beautician Room]]</tw-passagedata></tw-storydata>
+(set: $life to 150)(set: $population to $population * 2)(set: $wage to $wage * 0.5)
+
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do Something Else-&gt;Go to Beautician Room]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
