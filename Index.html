@@ -418,7 +418,7 @@ the room is empty
 
 (text-colour:grey)[Hello, I am Amygdala]
 
-(if: $metamygdala is 0)+(text-colour:grey[I can tell you almost anything about this laboratory if you ask the right question.] (if: $metamygdala is 1)+(text-colour:grey[What would you like to ask about?]
+(if: $metamygdala is 0)+(text-colour:grey)[I can tell you almost anything about this laboratory if you ask the right question.] (if: $metamygdala is 1)+(text-colour:grey)[What would you like to ask about?]
 (set: $metamygdala to 1)
 
 
@@ -501,7 +501,7 @@ In front of the test tube is a blank monitor.
 
 Nothing happens.
 
-(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)+(if: $ishuman is 0)[[[Do Something Else-&gt;Go to Child&#39;s Bedroom]]</tw-passagedata><tw-passagedata pid="37" name="Go to Geneticist Room" tags="" position="575,550" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
+(text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &lt; 1)[[Power down-&gt;No Battery Ending]](text-style:&quot;italic&quot;)+(text-colour:green)+(if: $battery &gt; 0)[[Do Something Else-&gt;Go to Child&#39;s Bedroom]]</tw-passagedata><tw-passagedata pid="37" name="Go to Geneticist Room" tags="" position="575,550" size="100,100">(enchant:?page,(bg:black)+(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(font:&#39;roboto&#39;)+(text-style:&quot;bold&quot;)+(text-colour:green))
 (if: $ishuman is 0) [(set: $battery to $battery -1)Current Battery: $battery %]
 
 You are in the Geneticist Room.
